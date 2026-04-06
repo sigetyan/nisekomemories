@@ -757,7 +757,7 @@ nav.scrolled {
 .contact-section { background: var(--charcoal); padding: 7rem 0; }
 .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start; }
 .contact-img {
-  width: 100%; aspect-ratio: 4/5; object-fit: cover;
+  width: 100%; aspect-ratio: 16/9; object-fit: cover;
   border: 1px solid rgba(200,191,176,0.2);
 }
 .contact-body .section-title { margin-bottom: 1.6rem; }
@@ -802,7 +802,6 @@ nav.scrolled {
 
 @media (max-width: 860px) {
   .contact-grid { grid-template-columns: 1fr; gap: 3rem; }
-  .contact-img { aspect-ratio: 16/9; }
 }
 
 /* FOOTER */
@@ -1246,12 +1245,8 @@ footer {
   <section class="contact-section" id="contact" aria-labelledby="contact-heading">
     <div class="container">
       <div class="contact-grid">
+
         <div class="reveal">
-          <img class="contact-img"
-            src="/images/otaru-hokkaido-japan-pre-wedding-shoot-photographer-elopement-wedding-yukata-kimono-8.webp"
-            alt="Couple in yukata Otaru Hokkaido Japan" loading="lazy">
-        </div>
-        <div class="reveal reveal-delay-1">
           <div class="label">Get in touch</div>
           <h2 class="section-title light" id="contact-heading">Check availability<br><em>for your date.</em></h2>
           <div class="contact-text" style="margin-top:1.6rem;">
@@ -1262,6 +1257,13 @@ footer {
             <a href="https://wa.me/819033997122" target="_blank" rel="noopener">WhatsApp: +81 90 3399 7122</a>
             <a href="mailto:team@nomad.wedding">team@nomad.wedding</a>
           </div>
+          <img class="contact-img"
+            src="/images/otaru-hokkaido-japan-pre-wedding-shoot-photographer-elopement-wedding-yukata-kimono-8.webp"
+            alt="Couple in yukata Otaru Hokkaido Japan" loading="lazy"
+            style="margin-top:2.4rem;">
+        </div>
+
+        <div class="reveal reveal-delay-1">
           <div class="sn-form-wrap">
             <iframe
               id="sn-form-nm"
@@ -1273,6 +1275,7 @@ footer {
           </div>
           <p class="contact-fallback">Form not loading? Reach us via <a href="https://wa.me/819033997122" target="_blank" rel="noopener">WhatsApp</a> or <a href="mailto:team@nomad.wedding">team@nomad.wedding</a></p>
         </div>
+
       </div>
     </div>
   </section>
