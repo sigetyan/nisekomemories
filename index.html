@@ -3,17 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Niseko Family &amp; Vacation Photographer | Hokkaido Japan</title>
+<title>Niseko Family Photographer | Couples &amp; Vacation Photoshoots in Hokkaido</title>
 <meta name="description" content="Lifestyle photography for families and couples visiting Niseko, Hokkaido, Japan. Packages from ¥50,000. Full-time local team. Gallery delivered in 5 working days.">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="https://www.nisekomemories.jp/">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Niseko Family &amp; Vacation Photographer | Hokkaido Japan">
-<meta property="og:description" content="Relaxed lifestyle photography for families and couples in Niseko, Hokkaido. From ¥50,000. Full-time local team. Book online.">
+<meta property="og:title" content="Niseko Family Photographer | Couples &amp; Vacation Photoshoots in Hokkaido">
+<meta property="og:description" content="Relaxed lifestyle photography for families and couples in Niseko, Hokkaido. From ¥50,000. English-speaking local team. Book online.">
 <meta property="og:url" content="https://www.nisekomemories.jp/">
 <meta property="og:image" content="https://www.nisekomemories.jp/images/niseko-japan-family-couples-photographer-lupins-37.webp">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Niseko Family &amp; Vacation Photographer | Hokkaido Japan">
+<meta name="twitter:title" content="Niseko Family Photographer | Couples &amp; Vacation Photoshoots in Hokkaido">
 <meta name="twitter:description" content="Relaxed lifestyle photography for families and couples in Niseko, Hokkaido. From ¥50,000.">
 <meta name="twitter:image" content="https://www.nisekomemories.jp/images/niseko-japan-family-couples-photographer-lupins-37.webp">
 <link rel="icon" href="/images/niseko-memories-logo.webp" type="image/webp">
@@ -31,14 +31,21 @@
       "url": "https://www.nisekomemories.jp",
       "email": "team@nomad.wedding",
       "telephone": "+81-90-3399-7122",
-      "description": "Niseko Memories is a professional vacation and family photography service based in Niseko, Hokkaido, operated by Nomado Ltd. The team offers lifestyle photography packages from ¥50,000, covering Niseko, Otaru, and Lake Toya across all four seasons.",
+      "description": "Niseko Memories is a vacation and family photography service based in Niseko, Hokkaido, Japan. Operated by Nomado Ltd, originally founded in Queenstown, New Zealand, and the sister company of Queenstown Memories. Packages from ¥50,000, covering Niseko, Otaru, and Lake Toya across all four seasons.",
       "priceRange": "¥50,000+",
       "currenciesAccepted": "JPY",
       "parentOrganization": {
         "@type": "Organization",
         "name": "Nomado Ltd",
-        "url": "https://nomadweddings.jp"
+        "url": "https://nomadweddings.jp",
+        "foundingLocation": {
+          "@type": "Place",
+          "name": "Queenstown, New Zealand"
+        }
       },
+      "sameAs": [
+        "https://queenstownmemories.co.nz"
+      ],
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Niseko",
@@ -51,6 +58,18 @@
         "longitude": 140.6875
       },
       "areaServed": ["Niseko", "Otaru", "Lake Toya", "Hokkaido"],
+      "serviceArea": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": 42.8022,
+          "longitude": 140.6875
+        },
+        "geoRadius": "60000"
+      },
+      "knowsLanguage": ["en", "ja"],
+      "paymentAccepted": ["Credit Card", "Bank Transfer"],
+      "image": "https://www.nisekomemories.jp/images/niseko-japan-family-couples-photographer-lupins-37.webp",
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
         "name": "Niseko Vacation Photography Packages",
@@ -138,6 +157,30 @@
             "@type": "Answer",
             "text": "Yes. Hokkaido photographs well in every season. Lupins bloom in late spring, lavender in summer, foliage turns in autumn. Niseko Memories operates year-round and can advise on the best timing for each season."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "How far in advance should we book?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Niseko Memories recommends booking at least two weeks ahead. During peak ski season (January to March) and the lupin and lavender season (June to August), popular dates fill quickly and booking four to six weeks out is advisable. Same-week bookings are sometimes possible outside peak periods."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is there Japanese language support?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The Niseko Memories team communicates in both English and Japanese. Enquiries can be sent in either language via email, WhatsApp, or the booking form."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What should we wear and how does payment work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For outdoor sessions, layered and weather-appropriate clothing works best. Avoid large logos. Neutral and muted tones photograph well in Hokkaido's landscapes. A preparation guide with location-specific outfit advice is sent after booking. A 20% deposit confirms the booking, with the remaining balance due on shoot day. Payment by card or bank transfer."
+          }
         }
       ]
     }
@@ -193,11 +236,21 @@ img { display: block; max-width: 100%; height: auto; }
 }
 .skip-link:focus { top: 1rem; }
 
+/* GLOBAL FOCUS */
+:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+}
+a:focus-visible, button:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+}
+
 /* TICKER */
 .ticker {
   background: var(--ink); color: var(--stone);
-  font-family: var(--sans); font-size: 0.62rem;
-  letter-spacing: 0.22em; text-transform: uppercase;
+  font-family: var(--sans); font-size: 0.8rem;
+  letter-spacing: 0.18em; text-transform: uppercase;
   padding: 0.55rem 0; overflow: hidden; white-space: nowrap;
 }
 .ticker-track {
@@ -233,8 +286,8 @@ nav.scrolled {
 
 .nav-links { display: flex; gap: 2.2rem; list-style: none; }
 .nav-links a {
-  font-family: var(--sans); font-size: 0.68rem; font-weight: 300;
-  letter-spacing: 0.2em; text-transform: uppercase; color: var(--stone);
+  font-family: var(--sans); font-size: 0.8rem; font-weight: 300;
+  letter-spacing: 0.16em; text-transform: uppercase; color: var(--stone);
   transition: color 0.2s;
 }
 .nav-links a:hover { color: var(--gold-lt); }
@@ -266,7 +319,7 @@ nav.scrolled {
 .drawer-nav li { border-bottom: 1px solid rgba(200,191,176,0.1); }
 .drawer-nav a {
   display: block; padding: 1rem 0;
-  font-family: var(--sans); font-size: 0.75rem; font-weight: 300;
+  font-family: var(--sans); font-size: 0.8rem; font-weight: 300;
   letter-spacing: 0.2em; text-transform: uppercase; color: var(--stone);
 }
 
@@ -303,8 +356,8 @@ nav.scrolled {
   content: ''; display: block; width: 28px; height: 1px; background: var(--gold);
 }
 .hero-label span {
-  font-family: var(--sans); font-size: 0.62rem; font-weight: 300;
-  letter-spacing: 0.28em; text-transform: uppercase; color: var(--gold);
+  font-family: var(--sans); font-size: 0.8rem; font-weight: 300;
+  letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold);
 }
 .hero-headline {
   font-family: var(--serif); font-weight: 300;
@@ -316,7 +369,7 @@ nav.scrolled {
 .hero-headline em { font-style: italic; color: var(--gold-lt); }
 .hero-sub {
   margin-top: 1.6rem;
-  font-family: var(--sans); font-size: 0.82rem; font-weight: 300;
+  font-family: var(--sans); font-size: 0.9rem; font-weight: 300;
   letter-spacing: 0.08em; color: var(--stone); line-height: 1.8;
   animation: fadeUp 1s 0.2s ease both;
 }
@@ -329,13 +382,18 @@ nav.scrolled {
   color: var(--warm); letter-spacing: -0.02em; line-height: 1;
 }
 .stat-label {
-  font-family: var(--sans); font-size: 0.6rem; font-weight: 300;
-  letter-spacing: 0.18em; text-transform: uppercase;
+  font-family: var(--sans); font-size: 0.78rem; font-weight: 300;
+  letter-spacing: 0.14em; text-transform: uppercase;
   color: var(--gold); margin-top: 0.3rem;
 }
 .hero-cta {
   margin-top: 2.8rem;
   animation: fadeUp 1s 0.5s ease both;
+}
+.hero-trust {
+  margin-top: 1.2rem;
+  font-family: var(--sans); font-size: 0.78rem; font-weight: 300;
+  letter-spacing: 0.1em; color: var(--stone); opacity: 0.8;
 }
 .scroll-hint {
   position: absolute; bottom: 2rem; right: 2rem; z-index: 2;
@@ -356,10 +414,32 @@ nav.scrolled {
   to { opacity: 1; transform: translateY(0); }
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .reveal.visible {
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+  .hero-headline,
+  .hero-sub,
+  .hero-stats,
+  .hero-cta {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  .scroll-hint::after {
+    animation: none !important;
+  }
+  nav { transition: none !important; }
+}
+
 /* BUTTONS */
 .btn {
-  display: inline-block; font-family: var(--sans); font-size: 0.68rem;
-  font-weight: 400; letter-spacing: 0.18em; text-transform: uppercase;
+  display: inline-block; font-family: var(--sans); font-size: 0.8rem;
+  font-weight: 400; letter-spacing: 0.14em; text-transform: uppercase;
   padding: 0.9rem 2.2rem; border: 1px solid currentColor;
   transition: background 0.25s, color 0.25s;
   cursor: pointer;
@@ -374,8 +454,8 @@ nav.scrolled {
 /* SECTION LABELS */
 .label {
   display: flex; align-items: center; gap: 1rem;
-  font-family: var(--sans); font-size: 0.62rem; font-weight: 300;
-  letter-spacing: 0.28em; text-transform: uppercase; color: var(--gold);
+  font-family: var(--sans); font-size: 0.8rem; font-weight: 300;
+  letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold);
   margin-bottom: 1.2rem;
 }
 .label::before {
@@ -430,6 +510,48 @@ nav.scrolled {
   .intro-img-wrap::before { display: none; }
 }
 
+/* LOCATIONS */
+.locations-section { background: var(--cream); padding: 6rem 0; border-top: 1px solid rgba(200,191,176,0.3); }
+.locations-inner {}
+.locations-grid {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 0;
+  border-top: 1px solid var(--stone);
+  margin-top: 3rem;
+}
+.location-item {
+  padding: 2.4rem 2rem 2.4rem 0;
+  border-right: 1px solid var(--stone);
+}
+.location-item:last-child { border-right: none; }
+.location-item h3 {
+  font-family: var(--serif); font-size: 1.2rem; font-weight: 400;
+  color: var(--ink); margin-bottom: 0.6rem;
+}
+.location-item p {
+  font-family: var(--sans); font-size: 0.88rem; font-weight: 300;
+  color: var(--charcoal); line-height: 1.85;
+}
+.locations-note {
+  margin-top: 2rem;
+  font-family: var(--sans); font-size: 0.88rem; font-weight: 300;
+  color: var(--taupe); line-height: 1.7;
+  padding-top: 1.5rem; border-top: 1px solid rgba(200,191,176,0.3);
+}
+@media (max-width: 860px) {
+  .locations-grid { grid-template-columns: 1fr 1fr; }
+  .location-item:nth-child(2) { border-right: none; }
+  .location-item:nth-child(3) { border-right: 1px solid var(--stone); padding-left: 0; }
+  .location-item:nth-child(4) { border-right: none; }
+  .location-item:nth-child(3),
+  .location-item:nth-child(4) { border-top: 1px solid var(--stone); padding-top: 2.4rem; }
+}
+@media (max-width: 540px) {
+  .locations-grid { grid-template-columns: 1fr; }
+  .location-item { border-right: none; border-bottom: 1px solid var(--stone); padding: 2rem 0; }
+  .location-item:last-child { border-bottom: none; }
+  .location-item:nth-child(3) { border-right: none; }
+}
+
 /* PACKAGES */
 .packages-section { background: var(--cream); padding: 7rem 0; }
 .packages-header { text-align: center; margin-bottom: 4rem; }
@@ -456,16 +578,21 @@ nav.scrolled {
 .pkg-img-wrap { overflow: hidden; }
 .pkg-body { padding: 2.2rem; flex: 1; display: flex; flex-direction: column; }
 .pkg-name {
-  font-family: var(--sans); font-size: 0.62rem; font-weight: 400;
-  letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold);
+  font-family: var(--sans); font-size: 0.78rem; font-weight: 400;
+  letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold);
   margin-bottom: 0.8rem;
 }
 .pkg-title {
   font-family: var(--serif); font-size: 1.5rem; font-weight: 300;
   color: var(--ink); margin-bottom: 1rem; line-height: 1.2;
 }
+.pkg-best-for {
+  font-family: var(--sans); font-size: 0.78rem; font-weight: 300;
+  color: var(--gold); letter-spacing: 0.04em;
+  margin-bottom: 0.8rem; font-style: italic;
+}
 .pkg-desc {
-  font-size: 0.84rem; line-height: 1.8; color: var(--charcoal);
+  font-size: 0.9rem; line-height: 1.8; color: var(--charcoal);
   margin-bottom: 1.8rem; font-weight: 300;
 }
 .pkg-includes {
@@ -529,7 +656,7 @@ nav.scrolled {
 }
 .parallax-content h2 em { font-style: italic; color: var(--gold-lt); }
 .parallax-content p {
-  font-family: var(--sans); font-size: 0.82rem; font-weight: 300;
+  font-family: var(--sans); font-size: 0.9rem; font-weight: 300;
   color: var(--stone); letter-spacing: 0.06em; margin-bottom: 2.2rem;
 }
 
@@ -556,7 +683,7 @@ nav.scrolled {
   color: var(--warm); margin-bottom: 0.8rem; line-height: 1.2;
 }
 .why-item p {
-  font-family: var(--sans); font-size: 0.84rem; font-weight: 300;
+  font-family: var(--sans); font-size: 0.9rem; font-weight: 300;
   color: var(--stone); line-height: 1.85;
 }
 
@@ -564,44 +691,6 @@ nav.scrolled {
   .why-grid { grid-template-columns: 1fr; }
   .why-item { border-right: none; border-bottom: 1px solid rgba(200,191,176,0.15); padding: 2.5rem 0; }
   .why-item:last-child { border-bottom: none; }
-}
-
-/* TESTIMONIALS */
-.testimonials-section { background: var(--charcoal); padding: 7rem 0; }
-.testimonials-grid {
-  display: grid; grid-template-columns: repeat(3, 1fr); gap: 0;
-  border-top: 1px solid rgba(200,191,176,0.15);
-  margin-top: 4rem;
-}
-.testi-item {
-  padding: 3rem 2.5rem;
-  border-right: 1px solid rgba(200,191,176,0.15);
-}
-.testi-item:last-child { border-right: none; }
-.testi-quote {
-  font-family: var(--serif); font-size: 1.1rem; font-style: italic;
-  font-weight: 300; color: var(--warm); line-height: 1.7;
-  margin-bottom: 1.6rem;
-}
-.testi-quote::before {
-  content: '\201C'; font-size: 3rem; line-height: 0.6; color: var(--gold);
-  opacity: 0.5; display: block; margin-bottom: 0.8rem;
-  font-family: var(--serif);
-}
-.testi-name {
-  font-family: var(--sans); font-size: 0.68rem; font-weight: 400;
-  letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold);
-  margin-bottom: 0.2rem;
-}
-.testi-detail {
-  font-family: var(--sans); font-size: 0.72rem; font-weight: 300;
-  color: var(--taupe);
-}
-
-@media (max-width: 768px) {
-  .testimonials-grid { grid-template-columns: 1fr; }
-  .testi-item { border-right: none; border-bottom: 1px solid rgba(200,191,176,0.15); padding: 2.5rem 0; }
-  .testi-item:last-child { border-bottom: none; }
 }
 
 /* PROCESS */
@@ -625,7 +714,7 @@ nav.scrolled {
   color: var(--ink); margin-bottom: 0.7rem;
 }
 .process-item p {
-  font-family: var(--sans); font-size: 0.84rem; font-weight: 300;
+  font-family: var(--sans); font-size: 0.9rem; font-weight: 300;
   color: var(--charcoal); line-height: 1.85;
 }
 .process-cta { text-align: center; margin-top: 3.5rem; }
@@ -675,6 +764,11 @@ nav.scrolled {
 .contact-text p {
   font-size: 0.88rem; line-height: 1.85; color: var(--stone);
   margin-bottom: 1.4rem; font-weight: 300;
+}
+.contact-payment {
+  font-family: var(--sans); font-size: 0.88rem; font-weight: 300;
+  color: var(--gold) !important; letter-spacing: 0.04em;
+  margin-bottom: 0 !important;
 }
 .contact-links { display: flex; flex-direction: column; gap: 0.6rem; margin-bottom: 2.4rem; }
 .contact-links a {
@@ -730,8 +824,8 @@ footer {
   color: var(--taupe); line-height: 1.8; max-width: 280px;
 }
 .footer-heading {
-  font-family: var(--sans); font-size: 0.58rem; font-weight: 400;
-  letter-spacing: 0.24em; text-transform: uppercase; color: var(--gold);
+  font-family: var(--sans); font-size: 0.78rem; font-weight: 400;
+  letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold);
   margin-bottom: 1.2rem;
 }
 .footer-links { list-style: none; display: flex; flex-direction: column; gap: 0.5rem; }
@@ -743,7 +837,7 @@ footer {
 .footer-copy {
   border-top: 1px solid rgba(200,191,176,0.1);
   padding-top: 2rem;
-  font-family: var(--sans); font-size: 0.7rem; font-weight: 300;
+  font-family: var(--sans); font-size: 0.8rem; font-weight: 300;
   color: var(--taupe); letter-spacing: 0.04em;
 }
 
@@ -762,8 +856,8 @@ footer {
   text-align: center;
 }
 .mobile-cta a {
-  font-family: var(--sans); font-size: 0.72rem; font-weight: 400;
-  letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink);
+  font-family: var(--sans); font-size: 0.84rem; font-weight: 400;
+  letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink);
 }
 @media (max-width: 768px) { .mobile-cta { display: block; } }
 .mobile-cta.hidden { display: none; }
@@ -779,7 +873,7 @@ footer {
 <!-- NAV -->
 <nav id="main-nav" aria-label="Main navigation">
   <div class="nav-inner">
-    <a href="#" class="nav-brand" aria-label="Niseko Memories home">
+    <a href="/" class="nav-brand" aria-label="Niseko Memories home">
       <img src="/images/niseko-memories-logo.webp" alt="Niseko Memories Hokkaido Family and Vacation Photographers" width="742" height="378">
     </a>
     <ul class="nav-links" role="list">
@@ -835,7 +929,7 @@ footer {
       <div class="hero-stats">
         <div>
           <div class="stat-num">500+</div>
-          <div class="stat-label">Happy Clients</div>
+          <div class="stat-label">Couples &amp; Families</div>
         </div>
         <div>
           <div class="stat-num">5 Day</div>
@@ -848,6 +942,7 @@ footer {
       </div>
       <div class="hero-cta">
         <a href="#packages" class="btn btn-gold">View Packages</a>
+        <p class="hero-trust">From ¥50,000 &nbsp;·&nbsp; 5-day gallery delivery &nbsp;·&nbsp; English-speaking local team</p>
       </div>
     </div>
     <div class="scroll-hint" aria-hidden="true"><span>Scroll</span></div>
@@ -885,13 +980,42 @@ footer {
         </div>
         <div class="intro-body reveal reveal-delay-1">
           <div class="label">Who we are</div>
-          <h2 class="section-title" id="intro-heading">Niseko's full-time<br><em>portrait team.</em></h2>
+          <h2 class="section-title" id="intro-heading">Niseko's portrait<br><em>photography team.</em></h2>
           <br>
-          <p>Niseko Memories is a professional portrait photography service based in Niseko, Hokkaido, operated by Nomado Ltd. We offer vacation and family photography packages from ¥50,000, covering Niseko, Otaru, and Lake Toya across all four seasons.</p>
-          <p>We guide people through Hokkaido's landscapes at a pace that lets you enjoy it. Sessions are relaxed and built around you rather than a shot list. We know the light across every season, from deep winter powder to summer lupins and autumn foliage.</p>
-          <p>We work under <strong>Nomado Ltd</strong>, the same team behind Nomad Weddings Japan, Hokkaido's dedicated elopement and wedding photography service. You get that same standard of care and attention for your vacation.</p>
-          <a href="#contact" class="btn btn-dark">Book a Session</a>
+          <p>Niseko Memories is a vacation and family photography service in Hokkaido, Japan, operated by Nomado Ltd. We are the sister company of <a href="https://queenstownmemories.co.nz" target="_blank" rel="noopener" style="color:var(--gold);border-bottom:1px solid rgba(184,151,90,0.3);">Queenstown Memories</a> in New Zealand. Nomado Ltd is a Queenstown-founded photography company now operating in Niseko and throughout Japan.</p>
+          <p>Sessions are available in Niseko, Hirafu, Otaru, and Lake Toya, with packages from ¥50,000. Edited galleries are delivered within 5 working days. We work in English and Japanese, and travel to Otaru and Lake Toya is included in every package price.</p>
+          <p>Sessions are led by our local photographer, supported by a small team of contractors. Relaxed, unhurried, and built around you rather than a shot list.</p>
+          <a href="#packages" class="btn btn-dark" style="margin-right:1rem;">View Packages</a>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHERE WE PHOTOGRAPH -->
+  <section class="locations-section" aria-labelledby="locations-heading">
+    <div class="container">
+      <div class="locations-inner reveal">
+        <div class="label">Where we work</div>
+        <h2 class="section-title" id="locations-heading">Niseko, Otaru,<br><em>and Lake Toya.</em></h2>
+        <div class="locations-grid">
+          <div class="location-item">
+            <h3>Niseko &amp; Hirafu</h3>
+            <p>Our home base. Lupin fields in spring, powder snowfields in winter, the Annupuri ridgeline at any time of year. We know exactly where the light falls and when.</p>
+          </div>
+          <div class="location-item">
+            <h3>Otaru</h3>
+            <p>The canal district, the glassworks laneway, and the old merchant buildings make Otaru one of Hokkaido's most photogenic towns. A 40-minute drive from Niseko.</p>
+          </div>
+          <div class="location-item">
+            <h3>Lake Toya</h3>
+            <p>A caldera lake ringed by mountains. Clear water, open skies, and a stillness that photographs beautifully in every season. About 40 minutes from Niseko.</p>
+          </div>
+          <div class="location-item">
+            <h3>Hanazono &amp; Beyond</h3>
+            <p>We also photograph at Hanazono, Konbu Onsen, and selected off-map locations for clients who want something less expected. Ask us what suits your dates.</p>
+          </div>
+        </div>
+        <p class="locations-note">No transport surcharge for sessions within the Niseko area. Travel to Otaru or Lake Toya is included in the package price.</p>
       </div>
     </div>
   </section>
@@ -902,7 +1026,7 @@ footer {
       <div class="packages-header reveal">
         <div class="label">Photography Packages</div>
         <h2 class="section-title" id="packages-heading">Simple pricing.<br><em>Memorable results.</em></h2>
-        <p>All packages include professional editing, full-resolution images, and delivery via private online gallery within 5 working days. No hidden fees. We reply to all enquiries within 48 hours.</p>
+        <p>All packages include professional editing, full-resolution images, and delivery via private online gallery within 5 working days. No hidden fees. Travel to Otaru and Lake Toya included. We reply to all enquiries within 48 hours (72 hours during ski season).</p>
       </div>
       <div class="packages-grid">
 
@@ -915,6 +1039,7 @@ footer {
           <div class="pkg-body">
             <div class="pkg-name">Most Popular</div>
             <h3 class="pkg-title">Couples &amp; Families</h3>
+            <p class="pkg-best-for">Best for: couples, families with young children, honeymoons</p>
             <p class="pkg-desc">A relaxed one-hour lifestyle session at one Niseko or Hokkaido location. Perfect for couples and families of up to 5.</p>
             <ul class="pkg-includes">
               <li>1 hour photoshoot</li>
@@ -938,6 +1063,7 @@ footer {
           <div class="pkg-body">
             <div class="pkg-name">Groups Welcome</div>
             <h3 class="pkg-title">Tour Groups</h3>
+            <p class="pkg-best-for">Best for: tour operators, school groups, corporate retreats</p>
             <p class="pkg-desc">Two hours across two locations for larger groups. Ideal for tour operators, school trips, corporate retreats, and extended family gatherings.</p>
             <ul class="pkg-includes">
               <li>2 hour photoshoot</li>
@@ -961,6 +1087,7 @@ footer {
           <div class="pkg-body">
             <div class="pkg-name">Winter Special</div>
             <h3 class="pkg-title">Niseko Ski</h3>
+            <p class="pkg-best-for">Best for: powder days, ski groups, snow action shots</p>
             <p class="pkg-desc">On-mountain ski photography in Niseko's legendary powder. A professional ski guide accompanies your photographer to access the best terrain.</p>
             <ul class="pkg-includes">
               <li>Professional ski guide included</li>
@@ -992,33 +1119,6 @@ footer {
     </div>
   </section>
 
-  <!-- TESTIMONIALS -->
-  <section class="testimonials-section" aria-labelledby="testimonials-heading">
-    <div class="container">
-      <div class="reveal">
-        <div class="label">What clients say</div>
-        <h2 class="section-title light" id="testimonials-heading">Straight from<br><em>our clients.</em></h2>
-      </div>
-      <div class="testimonials-grid">
-        <div class="testi-item reveal">
-          <p class="testi-quote">The photos arrived before we even got home. Every single one looked like it was from a magazine. We were blown away by how relaxed the whole session felt.</p>
-          <div class="testi-name">Sarah &amp; Paulo</div>
-          <div class="testi-detail">Lake Toya, Hokkaido</div>
-        </div>
-        <div class="testi-item reveal reveal-delay-1">
-          <p class="testi-quote">We had a group of 18 and they handled everything perfectly. The locations were great and the gallery arrived exactly when they said it would.</p>
-          <div class="testi-name">Tanaka Group Tour</div>
-          <div class="testi-detail">Niseko, Hokkaido</div>
-        </div>
-        <div class="testi-item reveal reveal-delay-2">
-          <p class="testi-quote">Skiing in powder is one thing. Having photos of it that actually look good is another. The ski guide made a real difference getting us to the right spots on the mountain.</p>
-          <div class="testi-name">Michael &amp; Nichole</div>
-          <div class="testi-detail">Niseko Ski Session</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- WHY US -->
   <section class="why-section" id="why-us" aria-labelledby="why-heading">
     <div class="container">
@@ -1029,20 +1129,20 @@ footer {
       <div class="why-grid">
         <div class="why-item reveal">
           <div class="why-num">01</div>
-          <h3>Full-time local team</h3>
-          <p>We live and work in Niseko year-round. We know every season's light, every location's best angle, and exactly where to be at sunrise in February or sunset in October. You get someone who actually lives here, not a photographer who visited once.</p>
+          <h3>Based in Niseko year-round</h3>
+          <p>Our lead photographer lives and works in Niseko full-time, supported by a local contractor team. We know every season's light, every location's best angle, and exactly where to be at sunrise in February or sunset in October. You get someone who actually lives here, not a photographer who visited once.</p>
           <img src="/images/2JY03508.webp" alt="Niseko Memories photographer on location" loading="lazy" style="margin-top:2rem;width:100%;aspect-ratio:3/2;object-fit:cover;">
         </div>
         <div class="why-item reveal reveal-delay-1">
           <div class="why-num">02</div>
           <h3>Genuinely great photos</h3>
-          <p>Our editing team is the same one behind hundreds of Hokkaido shoots across every season. Colour, composition, and emotion taken seriously. No heavy filters, no over-editing. Just clean, well-made images.</p>
+          <p>The same editing approach behind our Queenstown work, applied to Hokkaido. Colour, composition, and emotion taken seriously. No heavy filters, no over-editing. Just clean, well-made images.</p>
           <img src="/images/niseko-otaru-hokkaido-portrait-photographer.webp" alt="Niseko Memories photographer Hokkaido" loading="lazy" style="margin-top:2rem;width:100%;aspect-ratio:3/2;object-fit:cover;">
         </div>
         <div class="why-item reveal reveal-delay-2">
           <div class="why-num">03</div>
           <h3>Fast gallery delivery</h3>
-          <p>Edited photos arrive in your private online gallery within 5 working days. Download full-resolution files to any device. Most clients get their gallery before they fly home.</p>
+          <p>Edited photos arrive in your private online gallery within 5 working days. Download full-resolution files to any device. Many clients receive their gallery before they fly home.</p>
           <img src="/images/niseko-snow-family-photographer.webp" alt="Photographer in snow Niseko winter" loading="lazy" style="margin-top:2rem;width:100%;aspect-ratio:3/2;object-fit:cover;">
         </div>
       </div>
@@ -1070,7 +1170,7 @@ footer {
         <div class="process-item reveal">
           <div class="process-num">01</div>
           <h3>Book a package</h3>
-          <p>Fill in the contact form with your dates and preferred package. We confirm availability within 48 hours and send a preparation guide covering locations, timing, what to wear, and what to expect on the day.</p>
+          <p>Fill in the contact form with your dates and preferred package. We confirm availability within 48 hours (72 hours during ski season) and send a preparation guide covering locations, timing, what to wear, and what to expect on the day.</p>
         </div>
         <div class="process-item reveal reveal-delay-1">
           <div class="process-num">02</div>
@@ -1110,7 +1210,7 @@ footer {
 
         <div class="faq-item reveal">
           <h3>What happens if the weather is bad?</h3>
-          <p>Hokkaido weather is part of what makes it special. Snow, mist, and overcast winter skies often produce the best images. For sessions significantly affected by conditions, the team works with you to adapt timing or reschedule where possible. We know the weather windows here better than anyone.</p>
+          <p>Hokkaido weather is part of what makes it special. Snow, mist, and overcast winter skies often produce the best images. For sessions significantly affected by conditions, the team works with you to adapt timing or reschedule where possible. We know Niseko's weather and light extremely well.</p>
         </div>
 
         <div class="faq-item reveal reveal-delay-1">
@@ -1126,6 +1226,16 @@ footer {
         <div class="faq-item reveal reveal-delay-1">
           <h3>Where do you photograph in Hokkaido?</h3>
           <p>Niseko Memories is based in Niseko and covers Niseko, Hirafu, Hanazono, Otaru, and Lake Toya. For wedding photography anywhere in Hokkaido, please visit Nomad Weddings Japan.</p>
+        </div>
+
+        <div class="faq-item reveal">
+          <h3>How far in advance should we book?</h3>
+          <p>We recommend booking at least two weeks ahead. During peak ski season (January to March) and the lupin and lavender season (June to August), popular dates fill quickly and we suggest booking four to six weeks out. Same-week bookings are sometimes possible outside peak periods.</p>
+        </div>
+
+        <div class="faq-item reveal reveal-delay-1">
+          <h3>Is there Japanese language support?</h3>
+          <p>Yes. Our team communicates in both English and Japanese. All enquiries can be sent in either language and we will reply accordingly. This applies to email, WhatsApp, and the booking form.</p>
         </div>
 
       </div>
@@ -1146,6 +1256,7 @@ footer {
           <h2 class="section-title light" id="contact-heading">Check availability<br><em>for your date.</em></h2>
           <div class="contact-text" style="margin-top:1.6rem;">
             <p>Fill in the form and we will respond within 48 hours. During peak ski season (December to March) our response time may extend to 72 hours.</p>
+            <p class="contact-payment">A 20% deposit confirms your booking. Remaining balance due on shoot day. Payment by card or bank transfer.</p>
           </div>
           <div class="contact-links">
             <a href="https://wa.me/819033997122" target="_blank" rel="noopener">WhatsApp: +81 90 3399 7122</a>
@@ -1174,15 +1285,14 @@ footer {
     <div class="footer-grid">
       <div class="footer-brand">
         <img src="/images/niseko-memories-logo.webp" alt="Niseko Memories" loading="lazy">
-        <p class="footer-desc">Professional lifestyle photography for families and couples exploring Niseko, Otaru, and Lake Toya in Hokkaido, Japan. Part of Nomado Ltd.</p>
+        <p class="footer-desc">Vacation and family photography in Niseko, Otaru, and Lake Toya. The Hokkaido sister company of Queenstown Memories, operated by Nomado Ltd.</p>
       </div>
       <div>
-        <p class="footer-heading">Our Services</p>
+        <p class="footer-heading">Related Services</p>
         <ul class="footer-links">
-          <li><a href="https://www.nisekomemories.jp">Niseko Family Photographer</a></li>
-          <li><a href="https://nomadweddings.jp" target="_blank" rel="noopener">Japan Wedding Photo + Video</a></li>
-          <li><a href="https://nomad.wedding" target="_blank" rel="noopener">Queenstown Wedding Photo + Video</a></li>
-          <li><a href="https://queenstownmemories.co.nz" target="_blank" rel="noopener">Queenstown Lifestyle Photo</a></li>
+          <li><a href="https://queenstownmemories.co.nz" target="_blank" rel="noopener">Queenstown Memories (sister brand)</a></li>
+          <li><a href="https://nomadweddings.jp" target="_blank" rel="noopener">Nomad Weddings Japan</a></li>
+          <li><a href="https://nomad.wedding" target="_blank" rel="noopener">Nomad Weddings NZ</a></li>
           <li><a href="http://www.propertymedia.jp" target="_blank" rel="noopener">Niseko Real Estate Photography</a></li>
         </ul>
       </div>
@@ -1193,7 +1303,6 @@ footer {
           <li><a href="mailto:team@nomad.wedding">team@nomad.wedding</a></li>
           <li><a href="#contact">Contact Form</a></li>
           <li>Location: Niseko, Hokkaido, Japan</li>
-          <li><a href="https://nomad.wedding/about-us" target="_blank" rel="noopener">About the Team</a></li>
         </ul>
       </div>
     </div>
@@ -1264,6 +1373,7 @@ footer {
       drawer.classList.add('open');
       hamburger.setAttribute('aria-expanded', 'true');
       drawer.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
       var first = drawer.querySelectorAll(focusable)[0];
       if (first) first.focus();
     }
@@ -1272,6 +1382,7 @@ footer {
       drawer.classList.remove('open');
       hamburger.setAttribute('aria-expanded', 'false');
       drawer.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
       hamburger.focus();
     }
 
