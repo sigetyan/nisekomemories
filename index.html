@@ -803,10 +803,15 @@ nav.scrolled {
 .sn-form-wrap {
   margin-top: 1.6rem;
   background: #f7f2ec;
+  width: 100%;
+  overflow: hidden;
 }
 .sn-form-wrap iframe {
-  width: 100% !important; max-width: 100% !important;
-  border: none; display: block;
+  width: 1px !important;
+  min-width: 100% !important;
+  max-width: 100% !important;
+  border: 0;
+  display: block;
 }
 
 @media (max-width: 860px) {
@@ -1275,14 +1280,15 @@ footer {
         <div class="reveal reveal-delay-1">
           <div class="sn-form-wrap">
             <iframe
-              id="sn-form-nm"
-              src="https://app.studioninja.co/contactform/parser/0a800fc9-7a7c-1768-817a-a88b87e16500/0a800fc8-9d4d-110b-819d-5dcec9e232c8"
-              style="height:945px;"
+              height="635"
+              id="sn-form-2ie7c"
+              src="https://app.studioninja.co/contactform/parser/0a800fc8-93f5-10f7-8194-4a9cbac924be/0a800fc9-951e-1af9-8195-21c60b8c4095"
               title="Niseko Memories Booking Form"
-              loading="lazy">
+              allowfullscreen>
             </iframe>
           </div>
           <p class="contact-fallback">Form not loading? Reach us via <a href="https://wa.me/819033997122" target="_blank" rel="noopener">WhatsApp</a> or <a href="mailto:team@nomad.wedding">team@nomad.wedding</a></p>
+          <script type="text/javascript" data-iframe-id="sn-form-2ie7c" src="https://app.studioninja.co/client-assets/form-render/assets/scripts/iframeResizer.js"></script>
         </div>
 
       </div>
@@ -1355,24 +1361,6 @@ footer {
       mobileCta.setAttribute('aria-hidden', inContact ? 'true' : 'false');
       mobileCta.classList.toggle('hidden', inContact);
     }, { passive: true });
-  }
-
-  var iframe = document.getElementById('sn-form-nm');
-  if (iframe) {
-    function clampIframe() {
-      var pw = iframe.parentElement ? iframe.parentElement.offsetWidth : 0;
-      if (pw > 0) {
-        iframe.style.setProperty('width', '100%', 'important');
-        iframe.style.setProperty('max-width', '100%', 'important');
-        if (window.innerWidth < 768) {
-          iframe.style.height = '1100px';
-        } else {
-          iframe.style.height = '945px';
-        }
-      }
-    }
-    clampIframe();
-    window.addEventListener('resize', clampIframe, { passive: true });
   }
 
   var hamburger = document.getElementById('hamburger');
