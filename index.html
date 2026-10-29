@@ -7,7 +7,12 @@
 <meta name="description" content="Lifestyle photography for families and couples visiting Niseko, Hokkaido, Japan. Packages from ¥50,000. Full-time local team. Gallery delivered in 5 working days.">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="https://www.nisekomemories.jp/">
+<link rel="alternate" hreflang="en" href="https://www.nisekomemories.jp/">
+<link rel="alternate" hreflang="ja" href="https://www.nisekomemories.jp/ja/">
+<link rel="alternate" hreflang="x-default" href="https://www.nisekomemories.jp/">
 <meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="ja_JP">
 <meta property="og:title" content="Niseko Family Photographer | Couples &amp; Vacation Photoshoots in Hokkaido">
 <meta property="og:description" content="Relaxed lifestyle photography for families and couples in Niseko, Hokkaido. From ¥50,000. English-speaking local team. Book online.">
 <meta property="og:url" content="https://www.nisekomemories.jp/">
@@ -25,10 +30,9 @@
   "@graph": [
     {
       "@type": "ProfessionalService",
-      "additionalType": "https://schema.org/Photographer",
       "@id": "https://www.nisekomemories.jp/#business",
       "name": "Niseko Memories",
-      "url": "https://www.nisekomemories.jp",
+      "url": "https://www.nisekomemories.jp/",
       "email": "hello@nisekomemories.jp",
       "telephone": "+81-90-3399-7122",
       "description": "Niseko Memories is a vacation and family photography service based in Niseko, Hokkaido, Japan. Operated by Nomado Ltd, originally founded in Queenstown, New Zealand, and the sister company of Queenstown Memories. Packages from ¥50,000, covering Niseko, Otaru, and Lake Toya across all four seasons.",
@@ -43,9 +47,6 @@
           "name": "Queenstown, New Zealand"
         }
       },
-      "sameAs": [
-        "https://queenstownmemories.co.nz"
-      ],
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Niseko",
@@ -874,13 +875,19 @@ footer {
 @media (max-width: 768px) { .mobile-cta { display: block; } }
 .mobile-cta.hidden { display: none; }
 
+/* LANGUAGE SWITCH */
+.nav-links { align-items: center; }
+.lang-switch a { border: 1px solid rgba(200,191,176,0.45); padding: 0.3rem 0.7rem; letter-spacing: 0.08em; text-transform: none; }
+.lang-switch a:hover { border-color: var(--gold-lt); }
+.nav-mobile { display: none; align-items: center; gap: 0.6rem; }
+.lang-switch-mobile { font-size: 0.8rem; color: var(--stone); border: 1px solid rgba(200,191,176,0.45); min-height: 44px; padding: 0 0.7rem; display: inline-flex; align-items: center; }
+@media (max-width: 900px) { .nav-mobile { display: flex; } }
 
 </style>
 </head>
 
 <body>
 
-<a href="#main" class="skip-link">Skip to content</a>
 
 <!-- NAV -->
 <nav id="main-nav" aria-label="Main navigation">
@@ -892,8 +899,11 @@ footer {
       <li><a href="#packages">Packages</a></li>
       <li><a href="#why-us">Why Us</a></li>
       <li><a href="#faq">FAQ</a></li>
+      <li class="lang-switch"><a href="/ja/" hreflang="ja" lang="ja">日本語</a></li>
       <li><a href="#contact" class="btn btn-gold" style="padding:0.5rem 1.2rem;">Book Now</a></li>
     </ul>
+    <div class="nav-mobile">
+      <a href="/ja/" class="lang-switch-mobile" hreflang="ja" lang="ja">日本語</a>
     <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-drawer">
       <svg width="22" height="16" viewBox="0 0 22 16" fill="none">
         <rect y="0" width="22" height="1.5" fill="currentColor"/>
@@ -901,6 +911,7 @@ footer {
         <rect y="14" width="22" height="1.5" fill="currentColor"/>
       </svg>
     </button>
+    </div>
   </div>
 </nav>
 
@@ -919,6 +930,7 @@ footer {
       <li><a href="#why-us">Why Us</a></li>
       <li><a href="#faq">FAQ</a></li>
       <li><a href="#contact">Book Now</a></li>
+      <li><a href="/ja/" hreflang="ja" lang="ja">日本語</a></li>
     </ul>
   </div>
 </div>
@@ -948,8 +960,8 @@ footer {
           <div class="stat-label">Gallery Delivery</div>
         </div>
         <div>
-          <div class="stat-num">48 Hr</div>
-          <div class="stat-label">Response Time</div>
+          <div class="stat-num">EN / <span lang="ja">日本語</span></div>
+          <div class="stat-label">Languages</div>
         </div>
       </div>
       <div class="hero-cta">
@@ -1016,11 +1028,11 @@ footer {
           </div>
           <div class="location-item">
             <h3>Otaru</h3>
-            <p>The canal district, the glassworks laneway, and the old merchant buildings make Otaru one of Hokkaido's most photogenic towns. A 40-minute drive from Niseko.</p>
+            <p>The canal district, the glassworks laneway, and the old merchant buildings make Otaru one of Hokkaido's most photogenic towns. About 1.5 hours by car from Niseko.</p>
           </div>
           <div class="location-item">
             <h3>Lake Toya</h3>
-            <p>A caldera lake ringed by mountains. Clear water, open skies, and a stillness that photographs beautifully in every season. About 40 minutes from Niseko.</p>
+            <p>A caldera lake ringed by mountains. Clear water, open skies, and a stillness that photographs beautifully in every season. About an hour by car from Niseko.</p>
           </div>
           <div class="location-item">
             <h3>Hanazono &amp; Beyond</h3>
@@ -1310,7 +1322,7 @@ footer {
           <li><a href="https://queenstownmemories.co.nz" target="_blank" rel="noopener">Queenstown Memories (sister brand)</a></li>
           <li><a href="https://nomadweddings.jp" target="_blank" rel="noopener">Nomad Weddings Japan</a></li>
           <li><a href="https://nomad.wedding" target="_blank" rel="noopener">Nomad Weddings NZ</a></li>
-          <li><a href="http://www.propertymedia.jp" target="_blank" rel="noopener">Niseko Real Estate Photography</a></li>
+          <li><a href="https://www.propertymedia.jp" target="_blank" rel="noopener">Niseko Real Estate Photography</a></li>
         </ul>
       </div>
       <div>
@@ -1320,6 +1332,7 @@ footer {
           <li><a href="mailto:hello@nisekomemories.jp">hello@nisekomemories.jp</a></li>
           <li><a href="#contact">Contact Form</a></li>
           <li>Location: Niseko, Hokkaido, Japan</li>
+          <li><a href="/ja/" hreflang="ja" lang="ja">日本語サイト</a></li>
         </ul>
       </div>
     </div>
