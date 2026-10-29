@@ -1041,6 +1041,9 @@ footer {
 @media (max-width: 768px) { .mobile-cta { transition: transform .3s ease; } .mobile-cta:not(.show) { transform: translateY(110%); } } body:has(#mobile-drawer.open) .mobile-cta { display: none; }
 @media (max-width: 480px) { .hero-stats > div:nth-child(3), .scroll-hint { display: none; } }
 .hero-primary { background: var(--gold); color: var(--ink); border-color: var(--gold); } .hero-primary:hover { background: var(--gold-lt); color: var(--ink); }
+.hero-bg::after { background: linear-gradient(to bottom, rgba(26,23,20,0.55) 0%, rgba(26,23,20,0) 18%), linear-gradient(to top, rgba(26,23,20,0.94) 0%, rgba(26,23,20,0.72) 38%, rgba(26,23,20,0.3) 68%, rgba(26,23,20,0.1) 100%); }
+@media (max-width: 768px) { .hero-bg::after { background: linear-gradient(to bottom, rgba(26,23,20,0.6) 0%, rgba(26,23,20,0) 16%), linear-gradient(to top, rgba(26,23,20,0.95) 0%, rgba(26,23,20,0.78) 45%, rgba(26,23,20,0.5) 75%, rgba(26,23,20,0.3) 100%); } }
+.hero-label span, .hero-stats .stat-label { color: var(--gold-lt); } .hero-sub { color: #e6ded2; }
 </style>
 </head>
 
