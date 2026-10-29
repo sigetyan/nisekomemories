@@ -41,16 +41,25 @@
       },
       "email": "hello@nisekomemories.jp",
       "telephone": "+81-90-3399-7122",
-      "description": "Niseko Memories is a vacation and family photography service based in Niseko, Hokkaido, Japan. Operated by Nomado Ltd, originally founded in Queenstown, New Zealand, and the sister company of Queenstown Memories. Shoots cover Niseko, Otaru, and Lake Toya across all four seasons.",
+      "description": "Niseko Memories is a vacation and family photography service based in Niseko, Hokkaido, Japan. Operated by Nomado GK, a photography company founded in Queenstown, New Zealand, and the sister brand of Queenstown Memories. Shoots cover Niseko, Otaru, and Lake Toya across all four seasons.",
       "currenciesAccepted": "JPY",
       "parentOrganization": {
         "@type": "Organization",
         "@id": "https://www.nisekomemories.jp/#nomado",
-        "name": "Nomado Ltd",
-        "url": "https://nomadweddings.jp",
-        "foundingLocation": {
-          "@type": "Place",
-          "name": "Queenstown, New Zealand"
+        "name": "NOMADO合同会社",
+        "alternateName": "Nomado GK",
+        "url": "https://www.nomado.company",
+        "identifier": {
+          "@type": "PropertyValue",
+          "propertyID": "法人番号",
+          "value": "9430003018070"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "北4条西2丁目16-4-102",
+          "addressLocality": "虻田郡倶知安町",
+          "addressRegion": "北海道",
+          "addressCountry": "JP"
         },
         "brand": [
           {
@@ -62,7 +71,7 @@
       },
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Niseko",
+        "addressLocality": "Kutchan",
         "addressRegion": "Hokkaido",
         "addressCountry": "JP"
       },
@@ -124,7 +133,13 @@
               "description": "1 hour lifestyle photoshoot at one Niseko or Hokkaido location. Up to 5 people. Online gallery in 5 working days."
             },
             "price": "50000",
-            "priceCurrency": "JPY"
+            "priceCurrency": "JPY",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "price": "50000",
+              "priceCurrency": "JPY",
+              "valueAddedTaxIncluded": true
+            }
           },
           {
             "@type": "Offer",
@@ -139,7 +154,13 @@
               "description": "2 hour photoshoot at 2 locations. Up to 30 people. Online gallery in 5 working days."
             },
             "price": "80000",
-            "priceCurrency": "JPY"
+            "priceCurrency": "JPY",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "price": "80000",
+              "priceCurrency": "JPY",
+              "valueAddedTaxIncluded": true
+            }
           },
           {
             "@type": "Offer",
@@ -151,10 +172,16 @@
             "itemOffered": {
               "@type": "Service",
               "name": "Niseko Ski Photography",
-              "description": "2 hour on-mountain ski photoshoot with professional ski guide. Up to 5 people. Online gallery in 5 working days."
+              "description": "2 hour on-mountain ski photoshoot with professional ski guide. Up to 5 people. Online gallery in 5 working days. Lift passes not included."
             },
             "price": "110000",
-            "priceCurrency": "JPY"
+            "priceCurrency": "JPY",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "price": "110000",
+              "priceCurrency": "JPY",
+              "valueAddedTaxIncluded": true
+            }
           }
         ]
       }
@@ -250,7 +277,7 @@
           "name": "Can you photograph us on the mountain?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. The Niseko Ski Photography package is designed exactly for this. A professional ski guide accompanies the session to access the best terrain safely. Powder runs, lift shots, and candid ski moments. Available winter season only."
+            "text": "Yes. The Niseko Ski Photography package is designed exactly for this. A professional ski guide accompanies the session to access the best terrain safely. Powder runs, lift shots, and candid ski moments. Available winter season only. Lift passes are not included."
           }
         },
         {
@@ -988,6 +1015,7 @@ footer {
 .pkg-note { color: #6f6458; }
 .pkg-note a { color: #775d2d !important; border-bottom-color: rgba(119,93,45,0.45) !important; }
 .footer-links li { color: #b3a594; }
+.pkg-tax { font-family: var(--sans); font-size: 0.75rem; color: var(--taupe); letter-spacing: 0.04em; }
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 </style>
 </head>
@@ -1112,7 +1140,7 @@ footer {
           <div class="label">Who we are</div>
           <h2 class="section-title" id="intro-heading">Niseko's portrait<br><em>photography team.</em></h2>
           <br>
-          <p>Niseko Memories is a vacation and family photography service in Hokkaido, Japan, operated by Nomado Ltd. We are the sister company of <a href="https://queenstownmemories.co.nz" target="_blank" rel="noopener" style="color:var(--gold);border-bottom:1px solid rgba(184,151,90,0.3);">Queenstown Memories<span class="sr-only"> (opens in a new tab)</span></a> in New Zealand. Nomado Ltd is a Queenstown-founded photography company now operating in Niseko and throughout Japan.</p>
+          <p>Niseko Memories is a vacation and family photography service in Hokkaido, Japan, and the sister brand of <a href="https://queenstownmemories.co.nz" target="_blank" rel="noopener" style="color:var(--gold);border-bottom:1px solid rgba(184,151,90,0.3);">Queenstown Memories<span class="sr-only"> (opens in a new tab)</span></a> in New Zealand.</p>
           <p>Sessions are available in Niseko, Hirafu, Otaru, and Lake Toya, with packages from ¥50,000. Edited galleries are delivered within 5 working days. We work in English and Japanese, and travel to Otaru and Lake Toya is included in every package price.</p>
           <p>Sessions are led by our local photographer, supported by a small team of contractors. Relaxed, unhurried, and built around you rather than a shot list.</p>
           <a href="#packages" class="btn btn-dark" style="margin-right:1rem;">View Packages</a>
@@ -1179,7 +1207,7 @@ footer {
               <li>50 to 80 edited images</li>
               <li>Private online gallery, 5 working days</li>
             </ul>
-            <div class="pkg-price">¥50,000</div>
+            <div class="pkg-price">¥50,000 <span class="pkg-tax">incl. tax</span></div>
             <a href="#contact" class="btn btn-dark">Check Availability</a>
           </div>
         </div>
@@ -1203,7 +1231,7 @@ footer {
               <li>120 to 160 edited images</li>
               <li>Private online gallery, 5 working days</li>
             </ul>
-            <div class="pkg-price">¥80,000</div>
+            <div class="pkg-price">¥80,000 <span class="pkg-tax">incl. tax</span></div>
             <a href="#contact" class="btn btn-dark">Check Availability</a>
           </div>
         </div>
@@ -1224,10 +1252,11 @@ footer {
               <li>2 hour on-mountain session</li>
               <li>Up to 5 people</li>
               <li>Powder runs and lift shots</li>
+              <li>Lift passes not included</li>
               <li>70 to 100 edited images</li>
               <li>Private online gallery, 5 working days</li>
             </ul>
-            <div class="pkg-price">¥110,000</div>
+            <div class="pkg-price">¥110,000 <span class="pkg-tax">incl. tax</span></div>
             <a href="#contact" class="btn btn-dark">Check Availability</a>
           </div>
         </div>
@@ -1345,7 +1374,7 @@ footer {
 
         <div class="faq-item reveal reveal-delay-1">
           <h3>Can you photograph us on the mountain?</h3>
-          <p>Yes. The Niseko Ski Photography package is designed exactly for this. A professional ski guide accompanies the session to access the best terrain safely. Powder runs, lift shots, and candid ski moments. Available winter season only.</p>
+          <p>Yes. The Niseko Ski Photography package is designed exactly for this. A professional ski guide accompanies the session to access the best terrain safely. Powder runs, lift shots, and candid ski moments. Available winter season only. Lift passes are not included.</p>
         </div>
 
         <div class="faq-item reveal">
@@ -1420,7 +1449,7 @@ footer {
     <div class="footer-grid">
       <div class="footer-brand">
         <img src="images/niseko-memories-logo.webp" alt="Niseko Memories" loading="lazy" width="742" height="378">
-        <p class="footer-desc">Vacation and family photography in Niseko, Otaru, and Lake Toya. The Hokkaido sister company of Queenstown Memories, operated by Nomado Ltd.</p>
+        <p class="footer-desc">Vacation and family photography in Niseko, Otaru, and Lake Toya. The Hokkaido sister brand of Queenstown Memories.</p>
       </div>
       <div>
         <p class="footer-heading">Related Services</p>
@@ -1437,12 +1466,14 @@ footer {
           <li><a href="https://wa.me/819033997122" target="_blank" rel="noopener">WhatsApp: +81 90 3399 7122<span class="sr-only"> (opens in a new tab)</span></a></li>
           <li><a href="mailto:hello@nisekomemories.jp">hello@nisekomemories.jp</a></li>
           <li><a href="#contact">Contact Form</a></li>
-          <li>Location: Niseko, Hokkaido, Japan</li>
+          <li>Location: Kutchan (Niseko area), Hokkaido, Japan</li>
+          <li><a href="/ja/legal/" hreflang="ja">Legal notice (Japanese)</a></li>
+          <li><a href="/ja/privacy/" hreflang="ja">Privacy policy (Japanese)</a></li>
           <li><a href="/ja/" hreflang="ja" lang="ja">日本語サイト</a></li>
         </ul>
       </div>
     </div>
-    <p class="footer-copy">&copy; 2026 Nomado Ltd &nbsp;&middot;&nbsp; Niseko, Hokkaido, Japan</p>
+    <p class="footer-copy">&copy; 2026 Niseko Memories &nbsp;&middot;&nbsp; Niseko, Hokkaido, Japan</p>
   </div>
 </footer>
 
