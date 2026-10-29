@@ -1298,6 +1298,16 @@ html { scroll-padding-top: 88px; }
 }
 .footer-brand img { width: 104px; height: auto; }
 
+/* round 8 UI */
+@media (max-width: 860px) {
+  .pkg-note, .contact-fallback { text-align: left; }
+  .pkg-note { word-break: auto-phrase; text-wrap: pretty; }
+  .parallax-bg { inset: 0; }
+}
+.cite { font-feature-settings: "halt" 1; margin-left: 0.05em; }
+.cite + .cite { margin-left: -0.1em; }
+@media (min-width: 1361px) { .location-item { padding-right: 1.5rem; } .location-item + .location-item { padding-left: 1.5rem; } }
+
 </style>
 </head>
 
@@ -1348,7 +1358,7 @@ html { scroll-padding-top: 88px; }
       <li><a href="#why-us">選ばれる理由</a></li>
       <li><a href="#process">ご予約の流れ</a></li>
       <li><a href="#faq">よくある質問</a></li>
-      <li><a href="#contact">予約・お問い合わせ</a></li>
+      <li><a href="#contact">お問い合わせ</a></li>
       <li><a href="/" hreflang="en" lang="en">English</a></li>
     </ul>
   </div>
@@ -1788,10 +1798,10 @@ html { scroll-padding-top: 88px; }
       <div>
         <p class="footer-heading">関連サービス</p>
         <ul class="footer-links">
-          <li><a href="https://queenstownmemories.co.nz" target="_blank" rel="noopener">Queenstown Memories（姉妹ブランド）<span class="sr-only">（新しいタブで開きます）</span></a></li>
-          <li><a href="https://nomadweddings.jp" target="_blank" rel="noopener">Nomad Weddings Japan（結婚式・フォトウェディング）<span class="sr-only">（新しいタブで開きます）</span></a></li>
-          <li><a href="https://nomad.wedding/jp/" target="_blank" rel="noopener">Nomad Weddings NZ（ニュージーランド挙式）<span class="sr-only">（新しいタブで開きます）</span></a></li>
-          <li><a href="https://www.propertymedia.jp" target="_blank" rel="noopener">Property Media Japan（ニセコの不動産撮影）<span class="sr-only">（新しいタブで開きます）</span></a></li>
+          <li><a href="https://queenstownmemories.co.nz" target="_blank" rel="noopener">Queenstown Memories<span class="nw">（姉妹ブランド）</span><span class="sr-only">（新しいタブで開きます）</span></a></li>
+          <li><a href="https://nomadweddings.jp" target="_blank" rel="noopener">Nomad Weddings Japan<span class="nw">（結婚式・フォトウェディング）</span><span class="sr-only">（新しいタブで開きます）</span></a></li>
+          <li><a href="https://nomad.wedding/jp/" target="_blank" rel="noopener">Nomad Weddings NZ<span class="nw">（ニュージーランド挙式）</span><span class="sr-only">（新しいタブで開きます）</span></a></li>
+          <li><a href="https://www.propertymedia.jp" target="_blank" rel="noopener">Property Media Japan<span class="nw">（ニセコの不動産撮影）</span><span class="sr-only">（新しいタブで開きます）</span></a></li>
         </ul>
       </div>
       <div>
