@@ -412,7 +412,6 @@ img { display: block; max-width: 100%; height: auto; }
 @media (max-width: 768px) { .container { padding: 0 1.25rem; } }
 
 
-
 /* GLOBAL FOCUS */
 :focus-visible {
   outline: 2px solid var(--gold);
@@ -518,6 +517,7 @@ nav.scrolled {
   transform: scale(1.05);
   transition: transform 0.1s;
 }
+.hero-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; }
 .hero-bg::after {
   content: '';
   position: absolute; inset: 0;
@@ -1608,7 +1608,7 @@ html { scroll-padding-top: 88px; }
         <div class="why-item reveal">
           <p class="why-num" aria-hidden="true">01</p>
           <h3>北海道に暮らすカメラマンが撮影</h3>
-          <p>撮影を担当するカメラマンのRyoは北海道に住み、一年を通してこの地で撮影しています。季節ごとの光の入り方や場所ごとのベストアングル、2月の朝日や10月の夕日がきれいに撮れる場所まで熟知しています。地元に暮らすカメラマンだからこそ撮れる一枚をお届けします。</p>
+          <p>メインカメラマンのRyoをはじめ、撮影を担当するカメラマンは北海道に住み、一年を通してこの地で撮影しています。季節ごとの光の入り方や場所ごとのベストアングル、2月の朝日や10月の夕日がきれいに撮れる場所まで熟知しています。地元に暮らすカメラマンだからこそ撮れる一枚をお届けします。</p>
           <img src="/images/ryo-niseko-memories-photographer-hokkaido.webp" srcset="/images/ryo-niseko-memories-photographer-hokkaido-828w.webp 828w, /images/ryo-niseko-memories-photographer-hokkaido-1280w.webp 1280w, /images/ryo-niseko-memories-photographer-hokkaido.webp 1290w" sizes="(max-width: 768px) 100vw, 33vw" alt="Niseko Memoriesのカメラマン、Ryo" loading="lazy" width="1290" height="1612" class="why-img why-img-portrait">
         </div>
         <div class="why-item reveal reveal-delay-1">
