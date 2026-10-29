@@ -32,7 +32,10 @@
       "@type": "ProfessionalService",
       "@id": "https://www.nisekomemories.jp/#business",
       "name": "Niseko Memories",
+      "alternateName": "ニセコメモリーズ",
       "url": "https://www.nisekomemories.jp/",
+      "logo": "https://www.nisekomemories.jp/images/niseko-memories-logo.webp",
+      "employee": {"@id": "https://www.nisekomemories.jp/#ryo"},
       "email": "hello@nisekomemories.jp",
       "telephone": "+81-90-3399-7122",
       "description": "Niseko Memories is a vacation and family photography service based in Niseko, Hokkaido, Japan. Operated by Nomado Ltd, originally founded in Queenstown, New Zealand, and the sister company of Queenstown Memories. Shoots cover Niseko, Otaru, and Lake Toya across all four seasons.",
@@ -45,7 +48,8 @@
         "foundingLocation": {
           "@type": "Place",
           "name": "Queenstown, New Zealand"
-        }
+        },
+        "brand": [{"@type": "Brand", "name": "Queenstown Memories", "url": "https://queenstownmemories.co.nz"}]
       },
       "address": {
         "@type": "PostalAddress",
@@ -58,16 +62,13 @@
         "latitude": 42.8022,
         "longitude": 140.6875
       },
-      "areaServed": ["Niseko", "Otaru", "Lake Toya", "Hokkaido"],
-      "serviceArea": {
-        "@type": "GeoCircle",
-        "geoMidpoint": {
-          "@type": "GeoCoordinates",
-          "latitude": 42.8022,
-          "longitude": 140.6875
-        },
-        "geoRadius": "60000"
-      },
+      "areaServed": [
+        {"@type": "AdministrativeArea", "name": "Niseko", "sameAs": "https://en.wikipedia.org/wiki/Niseko,_Hokkaido"},
+        {"@type": "AdministrativeArea", "name": "Kutchan", "sameAs": "https://en.wikipedia.org/wiki/Kutchan,_Hokkaido"},
+        {"@type": "AdministrativeArea", "name": "Otaru", "sameAs": "https://en.wikipedia.org/wiki/Otaru"},
+        {"@type": "Place", "name": "Lake Toya", "sameAs": "https://en.wikipedia.org/wiki/Lake_T%C5%8Dya"},
+        {"@type": "AdministrativeArea", "name": "Rankoshi", "sameAs": "https://en.wikipedia.org/wiki/Rankoshi,_Hokkaido"}
+      ],
       "knowsLanguage": ["en", "ja"],
       "paymentAccepted": ["Credit Card", "Bank Transfer"],
       "image": "https://www.nisekomemories.jp/images/niseko-japan-family-couples-photographer-lupins-37.webp",
@@ -118,9 +119,26 @@
       }
     },
     {
+      "@type": "Person", "@id": "https://www.nisekomemories.jp/#ryo", "name": "Ryo", "jobTitle": "Photographer",
+      "worksFor": {"@id": "https://www.nisekomemories.jp/#business"},
+      "homeLocation": {"@type": "Place", "name": "Hokkaido"},
+      "image": "https://www.nisekomemories.jp/images/ryo-niseko-memories-photographer-hokkaido.webp", "knowsLanguage": ["ja", "en"]
+    },
+    {
+      "@type": "WebSite", "@id": "https://www.nisekomemories.jp/#website", "url": "https://www.nisekomemories.jp/", "name": "Niseko Memories",
+      "inLanguage": ["en", "ja"], "publisher": {"@id": "https://www.nisekomemories.jp/#business"}
+    },
+    {
+      "@type": "WebPage", "@id": "https://www.nisekomemories.jp/#webpage", "url": "https://www.nisekomemories.jp/",
+      "name": "Niseko Family Photographer | Couples & Vacation Photoshoots in Hokkaido", "inLanguage": "en",
+      "isPartOf": {"@id": "https://www.nisekomemories.jp/#website"}, "about": {"@id": "https://www.nisekomemories.jp/#business"},
+      "dateModified": "2026-10-29"
+    },
+    {
       "@type": "FAQPage",
       "@id": "https://www.nisekomemories.jp/#faq",
       "inLanguage": "en",
+      "isPartOf": {"@id": "https://www.nisekomemories.jp/#webpage"},
       "mainEntity": [
         {
           "@type": "Question",
