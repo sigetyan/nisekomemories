@@ -1275,6 +1275,29 @@ body:has(#mobile-drawer.open) .mobile-cta { display: none; }
 }
 html { scroll-padding-top: 88px; }
 
+/* round 7 UI */
+@media (min-width: 861px) and (max-width: 1360px) {
+  .locations-grid { grid-template-columns: 1fr 1fr; }
+  .location-item:nth-child(2) { border-right: none; }
+  .location-item:nth-child(3) { border-right: 1px solid var(--stone); padding-left: 0; }
+  .location-item:nth-child(4) { border-right: none; }
+  .location-item:nth-child(3), .location-item:nth-child(4) { border-top: 1px solid var(--stone); padding-top: 2.4rem; }
+  .location-item:nth-child(2), .location-item:nth-child(4) { padding-left: 2rem; }
+}
+.locations-cta { display: flex; flex-wrap: wrap; gap: 0.25rem 1.5rem; }
+.locations-cta a { display: inline-flex; align-items: center; min-height: 44px; }
+@media (min-width: 901px) {
+  .lang-switch a { border: 0; padding: 0.4rem 0.2rem; opacity: 0.85; }
+  .lang-switch { padding-right: 1.4rem; margin-right: 0.2rem; border-right: 1px solid rgba(250,247,242,0.3); }
+}
+@media (max-width: 860px) {
+  .parallax-section::after { content: ''; position: absolute; inset: 0; z-index: 1; background: radial-gradient(ellipse 90% 60% at 50% 45%, rgba(20,18,16,0.55), rgba(20,18,16,0.15) 75%); pointer-events: none; }
+  .parallax-content p { text-shadow: 0 1px 8px rgba(0,0,0,0.45); }
+  .footer-links li:not(:has(a)) { padding: 0.65rem 0; }
+  .packages-header p { word-break: normal; text-wrap: pretty; }
+}
+.footer-brand img { width: 104px; height: auto; }
+
 </style>
 </head>
 
@@ -1432,11 +1455,11 @@ html { scroll-padding-top: 88px; }
           </div>
           <div class="location-item">
             <h3>小樽</h3>
-            <p>運河沿い<span class="nb">の石造り倉庫<a class="cite" href="#src-otaru-warehouses" aria-label="出典：小樽運河の石造り倉庫">［出典］</a><a class="cite" href="#src-otaru-canal" aria-label="出典：観光庁 小樽運河">［出典］</a>、</span>ガラス工芸店が<span class="nb">並ぶ堺町通り<a class="cite" href="#src-sakaimachi" aria-label="出典：小樽堺町通り">［出典］</a><a class="cite" href="#src-otaru-glass" aria-label="出典：観光庁 旧木村倉庫">［出典］</a>、</span>明治末期から大正期の繁栄を伝える銀行<span class="nb">や商社の建物<a class="cite" href="#src-otaru" aria-label="出典：小樽市 小樽の歴史的建造物">［出典］</a>。</span>北海道でも指折りの絵になる港町で、カップルフォトや浴衣での街歩き撮影のスポットとしても人気です。ニセコ（ひらふ）から車で約1時間15分〜<span class="nb">1時間半です<a class="cite" href="#src-otaru-drive" aria-label="出典：ニセコから小樽までの所要時間">［出典］</a>。</span></p>
+            <p>運河沿いの石造り倉<span class="nb">庫<a class="cite" href="#src-otaru-warehouses" aria-label="出典：小樽運河の石造り倉庫">［出典］</a><a class="cite" href="#src-otaru-canal" aria-label="出典：観光庁 小樽運河">［出典］</a>、</span>ガラス工芸店が並ぶ堺町通<span class="nb">り<a class="cite" href="#src-sakaimachi" aria-label="出典：小樽堺町通り">［出典］</a><a class="cite" href="#src-otaru-glass" aria-label="出典：観光庁 旧木村倉庫">［出典］</a>、</span>明治末期から大正期の繁栄を伝える銀行や商社の建<span class="nb">物<a class="cite" href="#src-otaru" aria-label="出典：小樽市 小樽の歴史的建造物">［出典］</a>。</span>北海道でも指折りの絵になる港町で、カップルフォトや浴衣での街歩き撮影のスポットとしても人気です。ニセコ（ひらふ）から車で約1時間15分〜1時間半で<span class="nb">す<a class="cite" href="#src-otaru-drive" aria-label="出典：ニセコから小樽までの所要時間">［出典］</a>。</span></p>
           </div>
           <div class="location-item">
             <h3>洞爺湖</h3>
-            <p>約11万年前の噴火で生まれた、山々に囲まれ<span class="nb">たカルデラ湖<a class="cite" href="#src-toya-caldera" aria-label="出典：洞爺カルデラの成り立ち">［出典］</a>。</span>澄んだ湖面と大きな空が広がる静かな景色は、四季を通して写真映えし、ご家族での記念撮影にもおすすめです。一帯は「洞爺湖有珠山ジオパーク」としてユネスコ世界ジオパークに認定<span class="nb">されています<a class="cite" href="#src-geopark" aria-label="出典：洞爺湖有珠山ジオパーク">［出典］</a><a class="cite" href="#src-iburi" aria-label="出典：北海道胆振総合振興局">［出典］</a>。</span>ニセコから車で<span class="nb">約1時間です<a class="cite" href="#src-toya-drive" aria-label="出典：ニセコから洞爺湖までの所要時間">［出典］</a>。</span></p>
+            <p>約11万年前の噴火で生まれた、山々に囲まれたカルデラ<span class="nb">湖<a class="cite" href="#src-toya-caldera" aria-label="出典：洞爺カルデラの成り立ち">［出典］</a>。</span>澄んだ湖面と大きな空が広がる静かな景色は、四季を通して写真映えし、ご家族での記念撮影にもおすすめです。一帯は「洞爺湖有珠山ジオパーク」としてユネスコ世界ジオパークに認定されていま<span class="nb">す<a class="cite" href="#src-geopark" aria-label="出典：洞爺湖有珠山ジオパーク">［出典］</a><a class="cite" href="#src-iburi" aria-label="出典：北海道胆振総合振興局">［出典］</a>。</span>ニセコから車で約1時間で<span class="nb">す<a class="cite" href="#src-toya-drive" aria-label="出典：ニセコから洞爺湖までの所要時間">［出典］</a>。</span></p>
           </div>
           <div class="location-item">
             <h3>花園・昆布温泉ほか</h3>
@@ -1444,7 +1467,7 @@ html { scroll-padding-top: 88px; }
           </div>
         </div>
         <p class="locations-note">カメラマンの交通費・出張費は、ニセコエリアはもちろん、小樽・洞爺湖での撮影も料金に含まれています。</p>
-        <p class="locations-note"><a class="inline-link" href="#packages">撮影プランと料金を見る</a>／<a class="inline-link" href="#contact">撮影場所を相談する</a></p>
+        <p class="locations-note locations-cta"><a class="inline-link" href="#packages">撮影プランと料金を見る</a><a class="inline-link" href="#contact">撮影場所を相談する</a></p>
       </div>
     </div>
   </section>
@@ -1648,7 +1671,7 @@ html { scroll-padding-top: 88px; }
 
         <div class="faq-item reveal">
           <h3>夏や秋も撮影できますか？</h3>
-          <p>はい、一年を通して撮影しています。ニセコでは6月ごろにルピナスが咲き（年により前後します）、7〜8月は緑が深まり、ニセコアンヌプリの紅葉は例年10月上旬から中旬に見<span class="nb">頃を迎えます<a class="cite" href="#src-koyo" aria-label="出典：ニセコアンヌプリの紅葉の見頃">［出典］</a>。</span>ご旅行の日程に合わせて、季節ごとのおすすめの時期や場所をご案内します。</p>
+          <p>はい、一年を通して撮影しています。ニセコでは6月ごろにルピナスが咲き（年により前後します）、7〜8月は緑が深まり、ニセコアンヌプリの紅葉は例年10月上旬から中旬に見頃を迎えま<span class="nb">す<a class="cite" href="#src-koyo" aria-label="出典：ニセコアンヌプリの紅葉の見頃">［出典］</a>。</span>ご旅行の日程に合わせて、季節ごとのおすすめの時期や場所をご案内します。</p>
         </div>
 
         <div class="faq-item reveal reveal-delay-1">
