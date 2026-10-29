@@ -273,7 +273,7 @@
           "name": "What happens if the weather is bad?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Hokkaido weather is part of what makes it special. Snow, mist, and overcast winter skies often produce the best images. Light rain and snow do not stop a session. If we decide it is not safe to shoot, we move your session to another time or day during your stay at no charge. If that is not possible, what you paid is kept as a 12-month credit, or, if you prefer and tell us within 30 days of our notice, refunded less a ¥5,000 handling fee, for any reason. See our Terms of Service for details."
+            "text": "Hokkaido weather is part of what makes it special. Snow, mist, and overcast winter skies often produce the best images. Light rain and snow do not stop a session. If we decide it is not safe to shoot, we move your session to another time or day during your stay at no charge. If that is not possible, what you paid is kept as a 12-month credit, or, if you prefer and tell us within 30 days of our notice, refunded less a ¥5,000 handling fee, whatever the reason (for example, if you are flying home). See our Terms of Service for details."
           }
         },
         {
@@ -1038,6 +1038,9 @@ footer {
 @media (max-width: 480px) { .hero-secondary { margin-left: 0; margin-top: 0.4rem; display: flex; width: fit-content; } }
 .mobile-cta{padding:0}.mobile-cta a{display:block;padding:1rem 1.5rem}
 @media (max-width: 600px) { .hero-headline { font-size: 2.6rem; line-height: 1.05; } .hero { height: auto; min-height: 100svh; padding-top: 6rem; } }
+@media (max-width: 768px) { .mobile-cta { transition: transform .3s ease; } .mobile-cta:not(.show) { transform: translateY(110%); } } body:has(#mobile-drawer.open) .mobile-cta { display: none; }
+@media (max-width: 480px) { .hero-stats > div:nth-child(3), .scroll-hint { display: none; } }
+.hero-primary { background: var(--gold); color: var(--ink); border-color: var(--gold); } .hero-primary:hover { background: var(--gold-lt); color: var(--ink); }
 </style>
 </head>
 
@@ -1122,7 +1125,7 @@ footer {
         </div>
       </div>
       <div class="hero-cta">
-        <a href="#packages" class="btn btn-gold">View Packages</a> <a href="#contact" class="hero-secondary">Check availability</a>
+        <a href="#packages" class="btn btn-gold hero-primary">View Packages</a> <a href="#contact" class="hero-secondary">Check availability</a>
         <p class="hero-trust">From ¥50,000 &nbsp;·&nbsp; gallery in 5 working days &nbsp;·&nbsp; English-speaking local team</p>
       </div>
     </div>
@@ -1231,7 +1234,7 @@ footer {
               <li>Private online gallery, 5 working days</li>
             </ul>
             <div class="pkg-price">¥50,000 <span class="pkg-tax">incl. tax</span></div>
-            <a href="#contact" class="btn btn-dark">Check Availability</a>
+            <a href="#contact" class="btn btn-dark">Check Availability<span class="sr-only"> (Couples &amp; Families)</span></a>
           </div>
         </div>
 
@@ -1255,7 +1258,7 @@ footer {
               <li>Private online gallery, 5 working days</li>
             </ul>
             <div class="pkg-price">¥80,000 <span class="pkg-tax">incl. tax</span></div>
-            <a href="#contact" class="btn btn-dark">Check Availability</a>
+            <a href="#contact" class="btn btn-dark">Check Availability<span class="sr-only"> (Tour Groups)</span></a>
           </div>
         </div>
 
@@ -1281,7 +1284,7 @@ footer {
               <li>Private online gallery, 5 working days</li>
             </ul>
             <div class="pkg-price">¥110,000 <span class="pkg-tax">incl. tax</span></div>
-            <a href="#contact" class="btn btn-dark">Check Availability</a>
+            <a href="#contact" class="btn btn-dark">Check Availability<span class="sr-only"> (Niseko Ski)</span></a>
           </div>
         </div>
 
@@ -1393,7 +1396,7 @@ footer {
 
         <div class="faq-item reveal">
           <h3>What happens if the weather is bad?</h3>
-          <p>Hokkaido weather is part of what makes it special. Snow, mist, and overcast winter skies often produce the best images. Light rain and snow do not stop a session. If we decide it is not safe to shoot, we move your session to another time or day during your stay at no charge. If that is not possible, what you paid is kept as a 12-month credit, or, if you prefer and tell us within 30 days of our notice, refunded less a ¥5,000 handling fee, for any reason. See our <a href="/terms/#weather">Terms of Service</a> for details.</p>
+          <p>Hokkaido weather is part of what makes it special. Snow, mist, and overcast winter skies often produce the best images. Light rain and snow do not stop a session. If we decide it is not safe to shoot, we move your session to another time or day during your stay at no charge. If that is not possible, what you paid is kept as a 12-month credit, or, if you prefer and tell us within 30 days of our notice, refunded less a ¥5,000 handling fee, whatever the reason (for example, if you are flying home). See our <a href="/terms/#weather">Terms of Service</a> for details.</p>
         </div>
 
         <div class="faq-item reveal reveal-delay-1">
@@ -1598,5 +1601,6 @@ footer {
 })();
 </script>
 
+<script>(function(){var c=document.getElementById('mobile-cta'),h=document.querySelector('.hero');if(!c||!h||!('IntersectionObserver' in window)){if(c)c.classList.add('show');return;}new IntersectionObserver(function(e){var s=!e[0].isIntersecting;c.classList.toggle('show',s);c.inert=!s;}).observe(h);})();</script>
 </body>
 </html>

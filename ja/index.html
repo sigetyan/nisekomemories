@@ -1074,6 +1074,9 @@ footer {
 @media (max-width: 480px) { .hero-secondary { margin-left: 0; margin-top: 0.4rem; display: flex; width: fit-content; } }
 .mobile-cta{padding:0}.mobile-cta a{display:block;padding:1rem 1.5rem}
 @media (max-width: 600px) { .hero-headline { font-size: 2.6rem; line-height: 1.05; } .hero { height: auto; min-height: 100svh; padding-top: 6rem; } }
+@media (max-width: 768px) { .mobile-cta { transition: transform .3s ease; } .mobile-cta:not(.show) { transform: translateY(110%); } } body:has(#mobile-drawer.open) .mobile-cta { display: none; }
+@media (max-width: 480px) { .hero-stats > div:nth-child(3), .scroll-hint { display: none; } }
+.hero-primary { background: var(--gold); color: var(--ink); border-color: var(--gold); } .hero-primary:hover { background: var(--gold-lt); color: var(--ink); }
 
 /* ===== JAPANESE OVERRIDES ===== */
 :root {
@@ -1335,6 +1338,7 @@ html { scroll-padding-top: 88px; }
 
 .section-title em{color:var(--gold-text)}.section-title.light em{color:var(--gold-lt)}.pkg-price .tax{color:#6f6458}.pkg-card:hover .pkg-price .tax{color:var(--stone)}.contact-section .inline-link{color:var(--gold-lt);border-bottom-color:rgba(212,184,122,.5)}
 .mobile-cta{padding:0}.mobile-cta a{display:block;padding:1rem 1.5rem}
+.parallax-content h2.parallax-title{font-style:normal;font-weight:500}
 
 </style>
 </head>
@@ -1578,7 +1582,7 @@ html { scroll-padding-top: 88px; }
             <p class="pkg-name">冬季限定</p>
             <h3 class="pkg-title" id="pkg3-title">ニセコ スキー撮影</h3>
             <p class="pkg-best-for">こんな方におすすめ：滑っている姿を残したい方、スキー仲間とご旅行中の方</p>
-            <p class="pkg-desc">世界中のスキーヤーが憧れるニセコのパウダースノーで、ゲレンデ撮影を行います。プロのスキーガイドが同行し、撮影に最適なコースへご案内します。</p>
+            <p class="pkg-desc">世界中のスキーヤーが憧れるニセコのパウダースノーで、ゲレンデ撮影を行います。プロのスキーガイドが同行し、スキー場の管理区域内で撮影に最適なコースへご案内します。</p>
             <ul class="pkg-includes">
               <li>プロのスキーガイドが同行</li>
               <li>撮影時間 2時間（ゲレンデでの撮影）</li>
@@ -1605,7 +1609,7 @@ html { scroll-padding-top: 88px; }
   <section class="parallax-section">
     <div class="parallax-bg" aria-hidden="true" style="background-image: var(--px1);"></div>
     <div class="parallax-content">
-      <p class="parallax-title">四季それぞれの<br><em>北海道を写真に。</em></p>
+      <h2 class="parallax-title">四季それぞれの<br><em>北海道を写真に。</em></h2>
       <p><span class="nw">冬のパウダースノー、</span><span class="nw">初夏のルピナス、</span><span class="nw">夏の緑、</span><span class="nw">秋の紅葉</span></p>
       <a href="#contact" class="btn btn-gold">空き状況を確認する</a>
     </div>
@@ -1645,7 +1649,7 @@ html { scroll-padding-top: 88px; }
   <section class="parallax-section">
     <div class="parallax-bg" aria-hidden="true" style="background-image: var(--px2);"></div>
     <div class="parallax-content">
-      <p class="parallax-title">撮影場所も、<br><em>一緒に考えます。</em></p>
+      <h2 class="parallax-title">撮影場所も、<br><em>一緒に考えます。</em></h2>
       <p>ニセコ・ひらふ・小樽・洞爺湖</p>
       <a href="#locations" class="btn btn-gold">撮影エリアを見る</a>
     </div>
