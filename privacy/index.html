@@ -42,6 +42,9 @@ h2{font-size:1.08rem;font-weight:500;color:var(--ink);margin:2.2rem 0 .6rem;padd
 p,li,td,th{font-size:.95rem}
 p+p{margin-top:.6rem}
 ol.items,ul{padding-left:1.6em;margin:.5rem 0}
+.summary ul{margin:.3rem 0 0}.cta{margin:2.5rem 0 0}.cta a{display:inline-block;padding:.75rem 1.4rem;border:1px solid currentColor;text-decoration:none}
+body:not(.en) .items{list-style:none;padding-left:0;counter-reset:k}body:not(.en) .items>li{counter-increment:k}body:not(.en) .items>li::before{content:"第" counter(k) "項　";font-weight:500}
+[id]{scroll-margin-top:1rem}
 ol.items>li,ul>li{margin:.25rem 0}
 table{width:100%;border-collapse:collapse;margin:.8rem 0 1rem}
 caption{text-align:left;font-size:.85rem;color:#6f6458;padding-bottom:.4rem}
@@ -83,29 +86,31 @@ footer a{color:#e6ded2;display:inline-block;padding:.5rem .4rem}
 <h1>Privacy Policy</h1>
 <p class="updated">Last updated: <time datetime="2026-10-29">29 October 2026</time></p>
 <p class="lead">Nomado GK ("we") runs the Niseko Memories photography service. This policy explains how we handle your personal information. It is a translation of our <a href="/ja/privacy/" hreflang="ja">Japanese privacy policy</a>; if the two differ, the Japanese version prevails.</p>
-<h2>1. What we collect</h2>
-<p>Through our enquiry form, email, phone and WhatsApp, we collect your name, email address, phone number, preferred session date, where you are staying, group size and anything else you tell us. We also treat the photos we take as personal information.</p>
-<h2>2. How we use it</h2>
+<h2 id="collect">1. What we collect</h2>
+<p>Through our enquiry form, email, phone and WhatsApp, we collect your name, email address, phone number, preferred session date, where you are staying, group size and anything else you tell us. We also treat the photos we take as personal information. We keep session files for 1 year after delivery and then delete them, except photos we use to show our work.</p>
+<h2 id="use">2. How we use it</h2>
 <ul>
 <li>Replying to enquiries, arranging your session and managing your booking</li>
 <li>Running the session, editing your photos and delivering them in an online gallery</li>
 <li>Invoicing and confirming payment</li>
-<li>Showing our work on our website, social media (including ads on our own accounts) and in our portfolio. Under the <a href="/terms/#publication">photo publication clause</a> of our Terms of Service, we do not publish photos of clients who opt out.</li>
+<li>Showing our work on our website, social media (including ads on our own accounts) and in our portfolio. Under clause 13 of our Terms of Service, <a href="/terms/#publication">Use of photos by us</a> of our Terms of Service, we do not publish photos of clients who opt out.</li>
+<li>Handling requests such as date changes (documents with sensitive information, such as medical certificates, are collected only with your consent, used only for that decision and deleted afterwards)</li>
 <li>Analysis to improve our service</li>
 </ul>
-<h2>3. Sharing and service providers</h2>
-<p>We do not give your personal data to third parties without your consent, unless the law requires it. We publish photos on our website and social media only within the consent given under the <a href="/terms/#publication">photo publication clause</a>. We use outside service providers for client management, payments, photo delivery and messaging, and they handle personal data for us. Where those providers are overseas, we choose ones with systems that meet the standards of Japan's Act on the Protection of Personal Information, and on request we will tell you about those systems as the law requires.</p>
-<h2>4. Keeping your data safe</h2>
+<h2 id="sharing">3. Sharing and service providers</h2>
+<p>We do not give your personal data to third parties without your consent, unless the law requires it. We publish photos on our website and social media only within the consent given under <a href="/terms/#publication">clause 13 (Use of photos by us)</a> of our Terms of Service. We use outside service providers for client management, payments, photo delivery and messaging, and they handle personal data for us. Where those providers are overseas, we choose ones with systems that meet the standards of Japan's Act on the Protection of Personal Information, and on request we will tell you about those systems as the law requires.</p>
+<h2 id="security">4. Keeping your data safe</h2>
+<p>We take the following steps to keep personal data safe.</p>
 <ul>
 <li>Organisation and people: only the staff who need your data can access it, and they are bound by confidentiality.</li>
-<li>Physical and technical: access controls, two step sign in, protection of devices against loss or theft, and protection against unauthorised access.</li>
+<li>Physical and technical: access controls, two-step sign-in, protection of devices against loss or theft, and protection against unauthorised access.</li>
 <li>Overseas services: we use cloud services from providers in Australia, the United States and New Zealand for client management, payments, photo delivery and messaging. We have checked the personal data protection rules in those countries and take safety measures accordingly.</li>
 </ul>
-<h2>5. Your rights</h2>
+<h2 id="rights">5. Your rights</h2>
 <p>You can ask us to tell you how we use your data, to disclose it (including records of sharing with third parties), or to correct, stop using or delete it. We will confirm your identity and respond as the law requires. Please email <a href="mailto:hello@nisekomemories.jp">hello@nisekomemories.jp</a>; we may ask for a copy of an ID document. There is no fee.</p>
-<h2>6. Complaints and contact</h2>
-<p>Nomado GK (Niseko Memories)<br>16-4-102 Kita 4-jo Nishi 2-chome, Kutchan, Abuta District, Hokkaido 044-0054, Japan<br>Email: <a href="mailto:hello@nisekomemories.jp">hello@nisekomemories.jp</a></p>
-<h2>7. Changes</h2>
+<h2 id="contact">6. Complaints and contact</h2>
+<p>Nomado GK (NOMADO合同会社), Representative Partner: James Hirata (平田 滋睦), Niseko Memories<br>16-4-102 Kita 4-jo Nishi 2-chome, Kutchan, Abuta District, Hokkaido 044-0054, Japan<br>Email: <a href="mailto:hello@nisekomemories.jp">hello@nisekomemories.jp</a></p>
+<h2 id="changes">7. Changes</h2>
 <p>We may update this policy when needed. Changes take effect when published on this page.</p>
 </main>
 <footer><a href="/">Niseko Memories</a> · <a href="/terms/">Terms of Service</a> · <a href="/ja/legal/" hreflang="ja">Legal notice (Japanese)</a> · <a href="/privacy/">Privacy Policy</a><br>&copy; 2026 Niseko Memories</footer>

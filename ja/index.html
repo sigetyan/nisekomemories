@@ -392,6 +392,7 @@
   --cream:     #f7f2ec;
   --warm:      #fdfaf6;
   --gold:      #b8975a;
+  --gold-text: #775d2d;
   --gold-lt:   #d4b87a;
   --serif:     'Cormorant Garamond', Georgia, serif;
   --sans:      'Jost', sans-serif;
@@ -1063,6 +1064,10 @@ footer {
 .footer-links li { color: #b3a594; }
 .pkg-tax { font-family: var(--sans); font-size: 0.75rem; color: var(--taupe); letter-spacing: 0.04em; }
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+.label,.pkg-name,.pkg-best-for{color:var(--gold-text)}.label::before{background:var(--gold-text)}.why-section .label,.contact-section .label{color:var(--gold-lt)}.pkg-tax{color:#6f6458}
+.footer-links a,.contact-links a{display:inline-block;padding:.35rem 0}
+.px1{background-image:url('/images/niseko-lake-toya-family-vacation-photographer-japan-hokkaido-scaled.webp')}.px2{background-image:url('/images/niseko-family-photographer-japan-hokkaido-scaled.webp')}
+@media (max-width:1280px){.px1{background-image:url('/images/niseko-lake-toya-family-vacation-photographer-japan-hokkaido-scaled-1280w.webp')}.px2{background-image:url('/images/niseko-family-photographer-japan-hokkaido-scaled-1280w.webp')}}
 
 /* ===== JAPANESE OVERRIDES ===== */
 :root {
@@ -1487,7 +1492,7 @@ html { scroll-padding-top: 88px; }
           </div>
           <div class="location-item">
             <h3>花園・昆布温泉ほか</h3>
-            <p>花園（倶知安町）や昆布温泉（蘭越町・ニセコ町）のほか、地元ならではの穴場スポットでも撮影できます。ご旅行の日程に合う場所をご提案しますので、お気軽にご相談ください。</p>
+            <p>花園（倶知安町）や昆布温泉（蘭越町・ニセコ町）のほか、エリア内の地元ならではの穴場スポットでも撮影できます（エリア外は別途出張費でご相談ください）。ご旅行の日程に合う場所をご提案しますので、お気軽にご相談ください。</p>
           </div>
         </div>
         <p class="locations-note">ニセコエリアはもちろん、小樽・洞爺湖での撮影でも、カメラマンの交通費・出張費は料金に含まれています。</p>
@@ -1917,7 +1922,7 @@ html { scroll-padding-top: 88px; }
   }
 
 })();
-(function(){var c=document.getElementById('mobile-cta'),h=document.querySelector('.hero');if(!c||!h||!('IntersectionObserver' in window)){if(c)c.classList.add('show');return;}new IntersectionObserver(function(e){c.classList.toggle('show',!e[0].isIntersecting);}).observe(h);})();
+(function(){var c=document.getElementById('mobile-cta'),h=document.querySelector('.hero');if(!c||!h||!('IntersectionObserver' in window)){if(c)c.classList.add('show');return;}new IntersectionObserver(function(e){var s=!e[0].isIntersecting;c.classList.toggle('show',s);c.inert=!s;}).observe(h);})();
 </script>
 
 </body>
