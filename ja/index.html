@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ニセコの家族写真・カップルフォト｜北海道の出張撮影 Niseko Memories</title>
-<meta name="description" content="ニセコ・小樽・洞爺湖で家族写真、カップルフォト、スキー撮影。1時間42,500円（税込）から。北海道在住のカメラマンが撮影し、写真は5営業日以内にオンラインでお届けします。小樽・洞爺湖への出張費込み。">
+<meta name="description" content="ニセコ・小樽・洞爺湖で家族写真やカップルフォトのロケーションフォト、スキー撮影。1時間42,500円（税込）から。北海道在住のカメラマンが撮影し、写真は5営業日以内にオンラインでお届けします。小樽・洞爺湖への出張費込み。">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="https://www.nisekomemories.jp/ja/">
 <link rel="alternate" hreflang="en" href="https://www.nisekomemories.jp/">
@@ -25,6 +25,7 @@
 <meta name="twitter:title" content="ニセコの家族写真・カップルフォト｜北海道の出張撮影 Niseko Memories">
 <meta name="twitter:description" content="ニセコ・小樽・洞爺湖で家族写真やカップルフォトを撮影。1時間42,500円（税込）から。">
 <meta name="twitter:image" content="https://www.nisekomemories.jp/images/og-niseko-memories-ja.jpg">
+<meta name="twitter:image:alt" content="ニセコのルピナス畑で撮影したご家族の写真">
 <link rel="icon" href="/images/niseko-memories-logo.webp" type="image/webp">
 <link rel="apple-touch-icon" href="/images/niseko-memories-logo.webp">
 
@@ -42,7 +43,7 @@
       "image": "https://www.nisekomemories.jp/images/niseko-japan-family-couples-photographer-lupins-37.webp",
       "email": "hello@nisekomemories.jp",
       "telephone": "+81-90-3399-7122",
-      "description": "Niseko Memoriesは北海道ニセコを拠点とする旅行写真・家族写真の撮影サービスです。ニセコ、ひらふ、小樽、洞爺湖で、ご家族・カップル・グループの撮影とニセコでのスキー撮影を行っています。料金は42,500円（税込）から。",
+      "description": "Niseko Memoriesは北海道ニセコを拠点とする旅行写真・家族写真の撮影サービスです。ニセコ、ひらふ、小樽、洞爺湖で、ご家族・カップル・グループの撮影とニセコでのスキー撮影を行っています。",
       "currenciesAccepted": "JPY",
       "paymentAccepted": [
         "クレジットカード",
@@ -299,7 +300,7 @@
           "name": "北海道のどのエリアで撮影できますか？",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "ニセコ・ひらふ・花園を中心に、小樽や洞爺湖でも撮影しています。小樽・洞爺湖への出張費は料金に含まれます。北海道での結婚式やフォトウェディングをご希望の方は、Nomad Weddings Japan（nomadweddings.jp）をご覧ください。"
+            "text": "ニセコ・ひらふ・花園を中心に、小樽や洞爺湖でも撮影しています。小樽・洞爺湖への出張費は料金に含まれます。北海道での結婚式やフォトウェディングをご希望の方は、Nomad Weddings Japanをご覧ください。"
           }
         },
         {
@@ -1227,6 +1228,29 @@ body:has(#mobile-drawer.open) .mobile-cta { display: none; }
 .ticker { font-size: 0.8rem; color: #d9cfc1; }
 .parallax-content .parallax-title { line-height: 1.5; margin-bottom: 1.2rem; }
 
+/* round 5 UI */
+@media (max-width: 768px) {
+  .mobile-cta { transition: transform .3s ease; }
+  .mobile-cta:not(.show) { transform: translateY(110%); }
+  .packages-header p { text-align: left; }
+}
+.nb { white-space: nowrap; }
+.contact-payment { word-break: normal; text-wrap: pretty; }
+.parallax-content .btn { background: var(--gold); color: var(--ink); border-color: var(--gold); }
+.parallax-content .btn:hover { background: var(--gold-lt); color: var(--ink); }
+.contact-fallback { text-align: left; text-wrap: balance; }
+.contact-fallback a { white-space: nowrap; }
+.footer-links a { word-break: auto-phrase; }
+.footer-links li { padding: 0.3rem 0; }
+@media (min-width: 1024px) { .pkg-desc { min-height: 6.2em; } }
+.faq-item:last-child:nth-child(odd) { grid-column: 1; }
+.hero-secondary { display: inline-flex; align-items: center; min-height: 44px; padding: 0; }
+.drawer-nav a[href="#contact"] { background: var(--gold); color: var(--ink); text-align: center; margin-top: 1rem; border: 0; justify-content: center; display: block; }
+@media (min-width: 769px) { .intro-grid { align-items: start; } }
+:root { --px1: url('/images/niseko-lake-toya-family-vacation-photographer-japan-hokkaido-scaled.webp'); --px2: url('/images/niseko-family-photographer-japan-hokkaido-scaled.webp'); }
+@media (max-width: 768px) { :root { --px1: url('/images/niseko-lake-toya-family-vacation-photographer-japan-hokkaido-scaled-1280w.webp'); --px2: url('/images/niseko-family-photographer-japan-hokkaido-scaled-1280w.webp'); } }
+@media (max-width: 480px) { .hero-secondary { margin-left: 0; margin-top: 0.4rem; display: flex; width: fit-content; } }
+
 </style>
 </head>
 
@@ -1288,7 +1312,7 @@ body:has(#mobile-drawer.open) .mobile-cta { display: none; }
   <!-- HERO -->
   <section class="hero" aria-labelledby="hero-headline">
     <div class="hero-bg">
-      <img class="hero-img" src="/images/niseko-japan-family-couples-photographer-lupins-37-1280w.webp" srcset="/images/niseko-japan-family-couples-photographer-lupins-37-828w.webp 828w, /images/niseko-japan-family-couples-photographer-lupins-37-1280w.webp 1280w, /images/niseko-japan-family-couples-photographer-lupins-37.webp 2048w" sizes="100vw" alt="ニセコのルピナス畑で撮影したご家族の写真" width="2048" height="1365" fetchpriority="high" decoding="async">
+      <img class="hero-img" src="/images/niseko-japan-family-couples-photographer-lupins-37-1280w.webp" srcset="/images/niseko-japan-family-couples-photographer-lupins-37-828w.webp 828w, /images/niseko-japan-family-couples-photographer-lupins-37-1280w.webp 1280w, /images/niseko-japan-family-couples-photographer-lupins-37.webp 2048w" sizes="100vw" alt="ニセコのルピナス畑で撮影したご家族の写真" width="2048" height="1365" fetchpriority="high">
     </div>
     <div class="hero-content container">
       <div class="hero-label">
@@ -1347,13 +1371,13 @@ body:has(#mobile-drawer.open) .mobile-cta { display: none; }
     <div class="container">
       <div class="intro-grid">
         <div class="intro-img-wrap reveal">
-          <img src="/images/niseko-japan-lake-toya-proposal-engagement-shoot-wedding-photographer-150.webp"
+          <img src="/images/niseko-japan-lake-toya-proposal-engagement-shoot-wedding-photographer-150.webp" srcset="/images/niseko-japan-lake-toya-proposal-engagement-shoot-wedding-photographer-150-828w.webp 828w, /images/niseko-japan-lake-toya-proposal-engagement-shoot-wedding-photographer-150-1280w.webp 1280w, /images/niseko-japan-lake-toya-proposal-engagement-shoot-wedding-photographer-150.webp 2048w" sizes="(max-width: 860px) 100vw, 50vw"
             alt="北海道・洞爺湖のほとりで撮影したカップルの写真" loading="lazy" width="2048" height="1536">
         </div>
         <div class="intro-body reveal reveal-delay-1">
           <p class="label">Niseko Memoriesについて</p>
           <h2 class="section-title" id="intro-heading">ニセコを拠点にした<br><em>出張カメラマンの撮影サービス</em></h2>
-          <p>Niseko Memories（ニセコメモリーズ）は、北海道ニセコを拠点とする旅行写真・家族写真の出張撮影サービスです。ニュージーランドの<a class="inline-link" href="https://queenstownmemories.co.nz" target="_blank" rel="noopener">Queenstown Memories<span class="sr-only">（新しいタブで開きます）</span></a>の姉妹ブランドとして、ニセコを中心に北海道で撮影を行っています。</p>
+          <p>Niseko Memories（ニセコメモリーズ）は、北海道ニセコを拠点とする旅行写真・家族写真のロケーションフォトを撮影する出張撮影サービスです。ニュージーランドの<a class="inline-link" href="https://queenstownmemories.co.nz" target="_blank" rel="noopener">Queenstown Memories<span class="sr-only">（新しいタブで開きます）</span></a>の姉妹ブランドとして、ニセコを中心に北海道で撮影を行っています。</p>
           <p>撮影エリアはニセコ、ひらふ、小樽、洞爺湖。<a class="inline-link" href="#packages">料金</a>は42,500円（税込）から。小樽・洞爺湖への出張費も含まれ、編集した写真は5営業日以内にお届けします。</p>
           <p>撮影を担当するのは北海道在住のカメラマン。少人数の地元スタッフがサポートします。決まったカットを順番にこなすのではなく、ご家族やおふたりのペースに合わせて、ゆったりと撮影を進めます。</p>
 <dl class="key-facts">
@@ -1384,15 +1408,15 @@ body:has(#mobile-drawer.open) .mobile-cta { display: none; }
           </div>
           <div class="location-item">
             <h3>小樽</h3>
-            <p>運河沿いの石造り倉庫<a class="cite" href="#src-otaru-warehouses" aria-label="出典：小樽運河の石造り倉庫">［出典］</a>、ガラス工芸店が並ぶ堺町通り<a class="cite" href="#src-sakaimachi" aria-label="出典：小樽堺町通り">［出典］</a>、明治末期から大正期の繁栄を伝える銀行や商社の建物<a class="cite" href="#src-otaru" aria-label="出典：小樽市 小樽の歴史的建造物">［出典］</a>。北海道でも指折りの絵になる港町で、カップルフォトや浴衣での街歩き撮影のスポットとしても人気です。ニセコ（ひらふ）から車で約1時間15分〜1時間半です<a class="cite" href="#src-otaru-drive" aria-label="出典：ニセコから小樽までの所要時間">［出典］</a>。</p>
+            <p>運河沿いの石造り倉<span class="nb">庫<a class="cite" href="#src-otaru-warehouses" aria-label="出典：小樽運河の石造り倉庫">［出典］</a><a class="cite" href="#src-otaru-canal" aria-label="出典：観光庁 小樽運河">［出典］</a>、</span>ガラス工芸店が並ぶ堺町通<span class="nb">り<a class="cite" href="#src-sakaimachi" aria-label="出典：小樽堺町通り">［出典］</a><a class="cite" href="#src-otaru-glass" aria-label="出典：観光庁 旧木村倉庫">［出典］</a>、</span>明治末期から大正期の繁栄を伝える銀行や商社の建<span class="nb">物<a class="cite" href="#src-otaru" aria-label="出典：小樽市 小樽の歴史的建造物">［出典］</a>。</span>北海道でも指折りの絵になる港町で、カップルフォトや浴衣での街歩き撮影のスポットとしても人気です。ニセコ（ひらふ）から車で約1時間15分〜1時間半で<span class="nb">す<a class="cite" href="#src-otaru-drive" aria-label="出典：ニセコから小樽までの所要時間">［出典］</a>。</span></p>
           </div>
           <div class="location-item">
             <h3>洞爺湖</h3>
-            <p>約11万年前の噴火で生まれた、山々に囲まれたカルデラ湖<a class="cite" href="#src-toya-caldera" aria-label="出典：洞爺カルデラの成り立ち">［出典］</a>。澄んだ湖面と大きな空が広がる静かな景色は、四季を通して写真映えし、ご家族での記念撮影にもおすすめです。一帯は「洞爺湖有珠山ジオパーク」としてユネスコ世界ジオパークに認定されています<a class="cite" href="#src-geopark" aria-label="出典：洞爺湖有珠山ジオパーク">［出典］</a><a class="cite" href="#src-iburi" aria-label="出典：北海道胆振総合振興局">［出典］</a>。ニセコから車で約1時間です<a class="cite" href="#src-toya-drive" aria-label="出典：ニセコから洞爺湖までの所要時間">［出典］</a>。</p>
+            <p>約11万年前の噴火で生まれた、山々に囲まれたカルデラ<span class="nb">湖<a class="cite" href="#src-toya-caldera" aria-label="出典：洞爺カルデラの成り立ち">［出典］</a>。</span>澄んだ湖面と大きな空が広がる静かな景色は、四季を通して写真映えし、ご家族での記念撮影にもおすすめです。一帯は「洞爺湖有珠山ジオパーク」としてユネスコ世界ジオパークに認定されていま<span class="nb">す<a class="cite" href="#src-geopark" aria-label="出典：洞爺湖有珠山ジオパーク">［出典］</a><a class="cite" href="#src-iburi" aria-label="出典：北海道胆振総合振興局">［出典］</a>。</span>ニセコから車で約1時間で<span class="nb">す<a class="cite" href="#src-toya-drive" aria-label="出典：ニセコから洞爺湖までの所要時間">［出典］</a>。</span></p>
           </div>
           <div class="location-item">
             <h3>花園ほか</h3>
-            <p>花園や昆布温泉（蘭越町）のほか、地元ならではの穴場スポットでも撮影できます。ご旅行の日程に合う場所をご提案しますので、お気軽にご相談ください。</p>
+            <p>花園（倶知安町）や昆布温泉（蘭越町・ニセコ町）のほか、地元ならではの穴場スポットでも撮影できます。ご旅行の日程に合う場所をご提案しますので、お気軽にご相談ください。</p>
           </div>
         </div>
         <p class="locations-note">カメラマンの交通費・出張費は、ニセコエリアはもちろん、小樽・洞爺湖での撮影も料金に含まれています。</p>
@@ -1413,7 +1437,7 @@ body:has(#mobile-drawer.open) .mobile-cta { display: none; }
         <!-- Package 1 -->
         <article class="pkg-card reveal" aria-labelledby="pkg1-title">
           <div class="pkg-img-wrap">
-            <img class="pkg-img" src="/images/niseko-japan-family-couples-photographer-lupins-221.webp"
+            <img class="pkg-img" src="/images/niseko-japan-family-couples-photographer-lupins-221.webp" srcset="/images/niseko-japan-family-couples-photographer-lupins-221-828w.webp 828w, /images/niseko-japan-family-couples-photographer-lupins-221-1280w.webp 1280w, /images/niseko-japan-family-couples-photographer-lupins-221.webp 2048w" sizes="(max-width: 860px) 100vw, 33vw"
               alt="ニセコのルピナス畑で撮影したカップルの写真" loading="lazy" width="2048" height="1365">
           </div>
           <div class="pkg-body">
@@ -1437,7 +1461,7 @@ body:has(#mobile-drawer.open) .mobile-cta { display: none; }
         <!-- Package 2 -->
         <article class="pkg-card reveal reveal-delay-1" aria-labelledby="pkg2-title">
           <div class="pkg-img-wrap">
-            <img class="pkg-img" src="/images/niseko-hirafu-family-photographer-japan.webp"
+            <img class="pkg-img" src="/images/niseko-hirafu-family-photographer-japan.webp" srcset="/images/niseko-hirafu-family-photographer-japan-828w.webp 828w, /images/niseko-hirafu-family-photographer-japan-1280w.webp 1280w, /images/niseko-hirafu-family-photographer-japan.webp 2048w" sizes="(max-width: 860px) 100vw, 33vw"
               alt="ニセコ・ひらふで撮影したグループの写真" loading="lazy" width="2048" height="1365">
           </div>
           <div class="pkg-body">
@@ -1491,7 +1515,7 @@ body:has(#mobile-drawer.open) .mobile-cta { display: none; }
 
   <!-- PARALLAX 1 -->
   <section class="parallax-section">
-    <div class="parallax-bg" aria-hidden="true" style="background-image: url('/images/niseko-lake-toya-family-vacation-photographer-japan-hokkaido-scaled.webp');"></div>
+    <div class="parallax-bg" aria-hidden="true" style="background-image: var(--px1);"></div>
     <div class="parallax-content">
       <p class="parallax-title">四季それぞれの<br><em>北海道を写真に。</em></p>
       <p><span class="nw">冬のパウダースノー、</span><span class="nw">初夏のルピナス、</span><span class="nw">夏の緑、</span><span class="nw">秋の紅葉</span></p>
@@ -1511,19 +1535,19 @@ body:has(#mobile-drawer.open) .mobile-cta { display: none; }
           <p class="why-num" aria-hidden="true">01</p>
           <h3>北海道に暮らすカメラマンが撮影</h3>
           <p>撮影を担当するカメラマンは北海道に住み、一年を通してこの地で撮影しています。季節ごとの光の入り方や場所ごとのベストアングル、2月の朝日や10月の夕日がきれいに撮れる場所まで熟知しています。地元に暮らすカメラマンだからこそ撮れる一枚をお届けします。</p>
-          <img src="/images/ryo-niseko-memories-photographer-hokkaido.webp" alt="Niseko Memoriesのカメラマン、Ryo" loading="lazy" width="1290" height="1612" class="why-img why-img-portrait">
+          <img src="/images/ryo-niseko-memories-photographer-hokkaido.webp" srcset="/images/ryo-niseko-memories-photographer-hokkaido-828w.webp 828w, /images/ryo-niseko-memories-photographer-hokkaido-1280w.webp 1280w, /images/ryo-niseko-memories-photographer-hokkaido.webp 1290w" sizes="(max-width: 768px) 100vw, 33vw" alt="Niseko Memoriesのカメラマン、Ryo" loading="lazy" width="1290" height="1612" class="why-img why-img-portrait">
         </div>
         <div class="why-item reveal reveal-delay-1">
           <p class="why-num" aria-hidden="true">02</p>
           <h3>確かな写真のクオリティ</h3>
           <p>ニュージーランドのクイーンズタウンで培ってきた撮影・編集のスタイルを、北海道でもそのままに。色、構図、そして表情にこだわります。強いフィルターや過度な加工はせず、自然で上質な仕上がりに整えます。</p>
-          <img src="/images/niseko-otaru-hokkaido-portrait-photographer.webp" alt="北海道で撮影するNiseko Memoriesのカメラマン" loading="lazy" width="1600" height="1067" class="why-img">
+          <img src="/images/niseko-otaru-hokkaido-portrait-photographer.webp" srcset="/images/niseko-otaru-hokkaido-portrait-photographer-828w.webp 828w, /images/niseko-otaru-hokkaido-portrait-photographer-1280w.webp 1280w, /images/niseko-otaru-hokkaido-portrait-photographer.webp 1600w" sizes="(max-width: 768px) 100vw, 33vw" alt="北海道で撮影するNiseko Memoriesのカメラマン" loading="lazy" width="1600" height="1067" class="why-img">
         </div>
         <div class="why-item reveal reveal-delay-2">
           <p class="why-num" aria-hidden="true">03</p>
           <h3>スピーディーな納品</h3>
           <p>編集済みの写真は、5営業日以内にオンラインギャラリーでお届けします。高解像度のデータを、スマートフォンやパソコンに直接ダウンロードできます。旅行中に写真を受け取れることも少なくありません。</p>
-          <img src="/images/niseko-snow-family-photographer.webp" alt="冬のニセコ、雪の中で撮影するカメラマン" loading="lazy" width="2500" height="1667" class="why-img">
+          <img src="/images/niseko-snow-family-photographer.webp" srcset="/images/niseko-snow-family-photographer-828w.webp 828w, /images/niseko-snow-family-photographer-1280w.webp 1280w, /images/niseko-snow-family-photographer.webp 2500w" sizes="(max-width: 768px) 100vw, 33vw" alt="冬のニセコ、雪の中で撮影するカメラマン" loading="lazy" width="2500" height="1667" class="why-img">
         </div>
       </div>
     </div>
@@ -1531,7 +1555,7 @@ body:has(#mobile-drawer.open) .mobile-cta { display: none; }
 
   <!-- PARALLAX 2 -->
   <section class="parallax-section">
-    <div class="parallax-bg" aria-hidden="true" style="background-image: url('/images/niseko-family-photographer-japan-hokkaido-scaled.webp');"></div>
+    <div class="parallax-bg" aria-hidden="true" style="background-image: var(--px2);"></div>
     <div class="parallax-content">
       <p class="parallax-title">撮影場所も、<br><em>一緒に考えます。</em></p>
       <p>ニセコ・ひらふ・小樽・洞爺湖</p>
@@ -1599,7 +1623,7 @@ body:has(#mobile-drawer.open) .mobile-cta { display: none; }
 
         <div class="faq-item reveal">
           <h3>夏や秋も撮影できますか？</h3>
-          <p>はい、一年を通して撮影しています。ニセコでは例年6月ごろにルピナスが咲き（年により前後します）、7〜8月は緑の濃い夏、ニセコアンヌプリの紅葉は例年10月上旬から中旬に見頃を迎えます<a class="cite" href="#src-koyo" aria-label="出典：ニセコアンヌプリの紅葉の見頃">［出典］</a>。ご旅行の日程に合わせて、季節ごとのおすすめの時期や場所をご案内します。</p>
+          <p>はい、一年を通して撮影しています。ニセコでは例年6月ごろにルピナスが咲き（年により前後します）、7〜8月は緑の濃い夏、ニセコアンヌプリの紅葉は例年10月上旬から中旬に見頃を迎えま<span class="nb">す<a class="cite" href="#src-koyo" aria-label="出典：ニセコアンヌプリの紅葉の見頃">［出典］</a>。</span>ご旅行の日程に合わせて、季節ごとのおすすめの時期や場所をご案内します。</p>
         </div>
 
         <div class="faq-item reveal reveal-delay-1">
@@ -1653,7 +1677,7 @@ body:has(#mobile-drawer.open) .mobile-cta { display: none; }
             <a href="tel:+819033997122">電話：090-3399-7122</a>
           </div>
           <img class="contact-img"
-            src="/images/otaru-hokkaido-japan-pre-wedding-shoot-photographer-elopement-wedding-yukata-kimono-8.webp"
+            src="/images/otaru-hokkaido-japan-pre-wedding-shoot-photographer-elopement-wedding-yukata-kimono-8.webp" srcset="/images/otaru-hokkaido-japan-pre-wedding-shoot-photographer-elopement-wedding-yukata-kimono-8-828w.webp 828w, /images/otaru-hokkaido-japan-pre-wedding-shoot-photographer-elopement-wedding-yukata-kimono-8-1280w.webp 1280w, /images/otaru-hokkaido-japan-pre-wedding-shoot-photographer-elopement-wedding-yukata-kimono-8.webp 2048w" sizes="(max-width: 860px) 100vw, 50vw"
             alt="小樽の街で浴衣姿のカップルを撮影した写真" loading="lazy" width="2048" height="1533">
         </div>
 
@@ -1690,7 +1714,7 @@ body:has(#mobile-drawer.open) .mobile-cta { display: none; }
         <li id="src-otaru-warehouses"><a href="https://www.visit-hokkaido.jp/spot/detail_10040.html" target="_blank" rel="noopener">北海道観光機構 HOKKAIDO LOVE!：小樽運河<span class="sr-only">（新しいタブで開きます）</span></a>（石造倉庫が連なる運河、1923年完成）</li>
         <li id="src-sakaimachi"><a href="https://www.walkerplus.com/spot/ar0101s581204/" target="_blank" rel="noopener">ウォーカープラス：小樽堺町通り<span class="sr-only">（新しいタブで開きます）</span></a>（ガラス工芸店など100軒以上が並ぶ通り）</li>
         <li id="src-otaru-glass"><a href="https://www.mlit.go.jp/tagengo-db/en/R5-00017.html" target="_blank" rel="noopener">観光庁 多言語解説文データベース：旧木村倉庫<span class="sr-only">（新しいタブで開きます）</span></a>（1894年築の旧木村倉庫を北一硝子が1983年に再生、小樽のガラス産業の歴史）</li>
-        <li id="src-otaru-drive"><a href="https://japanactivity.com/otaru-day-trip-from-niseko" target="_blank" rel="noopener" lang="en">Otaru Day Trip from Niseko（Japan Activity）<span class="sr-only">（新しいタブで開きます）</span></a>（ニセコから小樽まで車で約75〜90分）</li>
+        <li id="src-otaru-drive"><a href="https://japanactivity.com/otaru-day-trip-from-niseko" target="_blank" rel="noopener" lang="en">Otaru Day Trip from Niseko（Japan Activity）<span class="sr-only">（新しいタブで開きます）</span></a>（ひらふから小樽まで国道5号経由で車で約75〜90分）</li>
         <li id="src-toya-drive"><a href="https://japanactivity.com/lake-toya-day-trip-from-niseko" target="_blank" rel="noopener" lang="en">Lake Toya Day Trip from Niseko（Japan Activity）<span class="sr-only">（新しいタブで開きます）</span></a>（ニセコから洞爺湖まで約50km、車で約1時間）</li>
         <li id="src-koyo"><a href="https://koyo.walkerplus.com/detail/ar0101e12761/data.html" target="_blank" rel="noopener">ウォーカープラス：ニセコアンヌプリの紅葉<span class="sr-only">（新しいタブで開きます）</span></a>（例年の見頃は10月上旬から中旬）</li>
       </ul>
@@ -1729,6 +1753,8 @@ body:has(#mobile-drawer.open) .mobile-cta { display: none; }
         <ul class="footer-links">
           <li><a href="#packages">料金プラン</a></li>
           <li><a href="#locations">撮影エリア</a></li>
+          <li><a href="#why-us">選ばれる理由</a></li>
+          <li><a href="#process">ご予約の流れ</a></li>
           <li><a href="#faq">よくある質問</a></li>
           <li><a href="#sources">出典・参考情報</a></li>
           <li><a href="/" hreflang="en"><span lang="en">English</span>（英語サイト）</a></li>
@@ -1824,6 +1850,7 @@ body:has(#mobile-drawer.open) .mobile-cta { display: none; }
   }
 
 })();
+(function(){var c=document.getElementById('mobile-cta'),h=document.querySelector('.hero');if(!c||!h||!('IntersectionObserver' in window)){if(c)c.classList.add('show');return;}new IntersectionObserver(function(e){c.classList.toggle('show',!e[0].isIntersecting);}).observe(h);})();
 </script>
 
 </body>
