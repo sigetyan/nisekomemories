@@ -22,4 +22,16 @@
     <loc>https://www.nisekomemories.jp/ja/privacy/</loc>
     <lastmod>2026-10-29</lastmod>
   </url>
+  <url>
+    <loc>https://www.nisekomemories.jp/terms/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.nisekomemories.jp/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.nisekomemories.jp/ja/terms/"/>
+    <lastmod>2026-10-29</lastmod>
+  </url>
+  <url>
+    <loc>https://www.nisekomemories.jp/ja/terms/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.nisekomemories.jp/terms/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.nisekomemories.jp/ja/terms/"/>
+    <lastmod>2026-10-29</lastmod>
+  </url>
 </urlset>
