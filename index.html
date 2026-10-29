@@ -7,11 +7,17 @@
 <meta name="description" content="Lifestyle photography for families and couples visiting Niseko, Hokkaido, Japan. Packages from ¥50,000. Full-time local team. Gallery delivered in 5 working days.">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="https://www.nisekomemories.jp/">
+<link rel="alternate" hreflang="en" href="https://www.nisekomemories.jp/">
+<link rel="alternate" hreflang="ja" href="https://www.nisekomemories.jp/ja/">
+<link rel="alternate" hreflang="x-default" href="https://www.nisekomemories.jp/">
 <meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="ja_JP">
 <meta property="og:title" content="Niseko Family Photographer | Couples &amp; Vacation Photoshoots in Hokkaido">
 <meta property="og:description" content="Relaxed lifestyle photography for families and couples in Niseko, Hokkaido. From ¥50,000. English-speaking local team. Book online.">
 <meta property="og:url" content="https://www.nisekomemories.jp/">
 <meta property="og:image" content="https://www.nisekomemories.jp/images/niseko-japan-family-couples-photographer-lupins-37.webp">
+<meta property="og:site_name" content="Niseko Memories">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Niseko Family Photographer | Couples &amp; Vacation Photoshoots in Hokkaido">
 <meta name="twitter:description" content="Relaxed lifestyle photography for families and couples in Niseko, Hokkaido. From ¥50,000.">
@@ -25,27 +31,35 @@
   "@graph": [
     {
       "@type": "ProfessionalService",
-      "additionalType": "https://schema.org/Photographer",
       "@id": "https://www.nisekomemories.jp/#business",
       "name": "Niseko Memories",
-      "url": "https://www.nisekomemories.jp",
+      "alternateName": "ニセコメモリーズ",
+      "url": "https://www.nisekomemories.jp/",
+      "logo": "https://www.nisekomemories.jp/images/niseko-memories-logo.webp",
+      "employee": {
+        "@id": "https://www.nisekomemories.jp/#ryo"
+      },
       "email": "hello@nisekomemories.jp",
       "telephone": "+81-90-3399-7122",
-      "description": "Niseko Memories is a vacation and family photography service based in Niseko, Hokkaido, Japan. Operated by Nomado Ltd, originally founded in Queenstown, New Zealand, and the sister company of Queenstown Memories. Packages from ¥50,000, covering Niseko, Otaru, and Lake Toya across all four seasons.",
-      "priceRange": "¥50,000+",
+      "description": "Niseko Memories is a vacation and family photography service based in Niseko, Hokkaido, Japan. Operated by Nomado Ltd, originally founded in Queenstown, New Zealand, and the sister company of Queenstown Memories. Shoots cover Niseko, Otaru, and Lake Toya across all four seasons.",
       "currenciesAccepted": "JPY",
       "parentOrganization": {
         "@type": "Organization",
+        "@id": "https://www.nisekomemories.jp/#nomado",
         "name": "Nomado Ltd",
         "url": "https://nomadweddings.jp",
         "foundingLocation": {
           "@type": "Place",
           "name": "Queenstown, New Zealand"
-        }
+        },
+        "brand": [
+          {
+            "@type": "Brand",
+            "name": "Queenstown Memories",
+            "url": "https://queenstownmemories.co.nz"
+          }
+        ]
       },
-      "sameAs": [
-        "https://queenstownmemories.co.nz"
-      ],
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Niseko",
@@ -57,18 +71,41 @@
         "latitude": 42.8022,
         "longitude": 140.6875
       },
-      "areaServed": ["Niseko", "Otaru", "Lake Toya", "Hokkaido"],
-      "serviceArea": {
-        "@type": "GeoCircle",
-        "geoMidpoint": {
-          "@type": "GeoCoordinates",
-          "latitude": 42.8022,
-          "longitude": 140.6875
+      "areaServed": [
+        {
+          "@type": "AdministrativeArea",
+          "name": "Niseko",
+          "sameAs": "https://en.wikipedia.org/wiki/Niseko,_Hokkaido"
         },
-        "geoRadius": "60000"
-      },
-      "knowsLanguage": ["en", "ja"],
-      "paymentAccepted": ["Credit Card", "Bank Transfer"],
+        {
+          "@type": "AdministrativeArea",
+          "name": "Kutchan",
+          "sameAs": "https://en.wikipedia.org/wiki/Kutchan,_Hokkaido"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Otaru",
+          "sameAs": "https://en.wikipedia.org/wiki/Otaru"
+        },
+        {
+          "@type": "Place",
+          "name": "Lake Toya",
+          "sameAs": "https://en.wikipedia.org/wiki/Lake_T%C5%8Dya"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Rankoshi",
+          "sameAs": "https://en.wikipedia.org/wiki/Rankoshi,_Hokkaido"
+        }
+      ],
+      "knowsLanguage": [
+        "en",
+        "ja"
+      ],
+      "paymentAccepted": [
+        "Credit Card",
+        "Bank Transfer"
+      ],
       "image": "https://www.nisekomemories.jp/images/niseko-japan-family-couples-photographer-lupins-37.webp",
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
@@ -76,6 +113,11 @@
         "itemListElement": [
           {
             "@type": "Offer",
+            "@id": "https://www.nisekomemories.jp/#offer-family-en",
+            "url": "https://www.nisekomemories.jp/#plan-family",
+            "seller": {
+              "@id": "https://www.nisekomemories.jp/#business"
+            },
             "itemOffered": {
               "@type": "Service",
               "name": "Couples and Families Photoshoot",
@@ -86,6 +128,11 @@
           },
           {
             "@type": "Offer",
+            "@id": "https://www.nisekomemories.jp/#offer-group-en",
+            "url": "https://www.nisekomemories.jp/#plan-group",
+            "seller": {
+              "@id": "https://www.nisekomemories.jp/#business"
+            },
             "itemOffered": {
               "@type": "Service",
               "name": "Tour Groups Photoshoot",
@@ -96,6 +143,11 @@
           },
           {
             "@type": "Offer",
+            "@id": "https://www.nisekomemories.jp/#offer-ski-en",
+            "url": "https://www.nisekomemories.jp/#plan-ski",
+            "seller": {
+              "@id": "https://www.nisekomemories.jp/#business"
+            },
             "itemOffered": {
               "@type": "Service",
               "name": "Niseko Ski Photography",
@@ -108,14 +160,73 @@
       }
     },
     {
+      "@type": "Person",
+      "@id": "https://www.nisekomemories.jp/#ryo",
+      "name": "Ryo",
+      "jobTitle": "Photographer",
+      "worksFor": {
+        "@id": "https://www.nisekomemories.jp/#business"
+      },
+      "homeLocation": {
+        "@type": "Place",
+        "name": "Hokkaido"
+      },
+      "image": "https://www.nisekomemories.jp/images/ryo-niseko-memories-photographer-hokkaido.webp",
+      "knowsLanguage": [
+        "ja",
+        "en"
+      ],
+      "description": "Hokkaido-based photographer shooting in Niseko, Otaru and Lake Toya year-round.",
+      "url": "https://www.nisekomemories.jp/#why-us"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.nisekomemories.jp/#website",
+      "url": "https://www.nisekomemories.jp/",
+      "name": "Niseko Memories",
+      "inLanguage": [
+        "en",
+        "ja"
+      ],
+      "publisher": {
+        "@id": "https://www.nisekomemories.jp/#business"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.nisekomemories.jp/#webpage",
+      "url": "https://www.nisekomemories.jp/",
+      "name": "Niseko Family Photographer | Couples & Vacation Photoshoots in Hokkaido",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://www.nisekomemories.jp/#website"
+      },
+      "about": {
+        "@id": "https://www.nisekomemories.jp/#business"
+      },
+      "description": "Lifestyle photography for families and couples visiting Niseko, Hokkaido. Gallery delivered in 5 working days.",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://www.nisekomemories.jp/images/niseko-japan-family-couples-photographer-lupins-37.webp",
+        "width": 2048,
+        "height": 1365
+      },
+      "dateModified": "2026-10-29"
+    },
+    {
       "@type": "FAQPage",
+      "@id": "https://www.nisekomemories.jp/#faq",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://www.nisekomemories.jp/#webpage"
+      },
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "How much does a Niseko vacation photoshoot cost?",
+          "name": "How much does a Niseko photoshoot cost?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Niseko Memories charges ¥50,000 for a one-hour couples or family session of up to 5 people. The Tour Groups package is ¥80,000 for 2 hours at 2 locations for groups of up to 30. The Niseko Ski Photography package is ¥110,000 and includes a professional ski guide. All packages include editing and online gallery delivery within 5 working days."
+            "text": "Niseko Memories charges ¥50,000 for a one-hour session for couples or families of up to 5. The Tour Groups package is ¥80,000 for 2 hours at 2 locations for groups up to 30. The Niseko Ski Photography package is ¥110,000 and includes a professional ski guide. All prices include editing and online gallery delivery within 5 working days."
           }
         },
         {
@@ -123,39 +234,39 @@
           "name": "How many photos will we receive?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "A 1-hour session with Niseko Memories typically produces 50 to 80 professionally edited images. A 2-hour session produces around 120 to 160. All images are delivered in full resolution via private online gallery within 5 working days."
+            "text": "A 1-hour session typically produces 50 to 80 professionally edited images. A 2-hour session produces around 120 to 160. All images are delivered in full resolution via a private online gallery within 5 working days, downloadable to any device."
           }
         },
         {
           "@type": "Question",
-          "name": "Where in Hokkaido does Niseko Memories photograph?",
+          "name": "What happens if the weather is bad?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Niseko Memories is based in Niseko and photographs throughout Niseko, Hirafu, Hanazono, Otaru, and Lake Toya. For elopements and wedding photography, please visit Nomad Weddings Japan at nomadweddings.jp."
+            "text": "Hokkaido weather is part of what makes it special. Snow, mist, and overcast winter skies often produce the best images. For sessions significantly affected by conditions, the team works with you to adapt timing or reschedule where possible. We know Niseko's weather and light extremely well."
           }
         },
         {
           "@type": "Question",
-          "name": "What happens if conditions are bad on the day?",
+          "name": "Can you photograph us on the mountain?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Hokkaido weather is changeable, and the Niseko Memories team knows it well. Snow, mist, and overcast skies often produce the most striking images. For sessions significantly affected by conditions, the team works with clients to adapt timing or reschedule where possible."
+            "text": "Yes. The Niseko Ski Photography package is designed exactly for this. A professional ski guide accompanies the session to access the best terrain safely. Powder runs, lift shots, and candid ski moments. Available winter season only."
           }
         },
         {
           "@type": "Question",
-          "name": "Can you photograph us skiing at Niseko?",
+          "name": "Do you photograph in summer and autumn?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. The Niseko Ski Photography package includes a professional ski guide and 2 hours of on-mountain shooting. Niseko Memories captures powder runs, lifts, and candid ski moments. The package is ¥110,000 for up to 5 people."
+            "text": "Yes. Niseko Memories photographs year-round. Lupins usually bloom around June (timing varies by year), July and August bring deep green summer, and autumn colour on Niseko Annupuri usually peaks in early to mid October. We can advise on the best timing for your travel dates."
           }
         },
         {
           "@type": "Question",
-          "name": "Do you photograph in summer and autumn as well?",
+          "name": "Where do you photograph in Hokkaido?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. Hokkaido photographs well in every season. Lupins bloom in late spring, lavender in summer, foliage turns in autumn. Niseko Memories operates year-round and can advise on the best timing for each season."
+            "text": "Niseko Memories is based in Niseko and covers Niseko, Hirafu, Hanazono, Otaru, and Lake Toya. For wedding photography anywhere in Hokkaido, please visit Nomad Weddings Japan."
           }
         },
         {
@@ -163,7 +274,7 @@
           "name": "How far in advance should we book?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Niseko Memories recommends booking at least two weeks ahead. During peak ski season (January to March) and the lupin and lavender season (June to August), popular dates fill quickly and booking four to six weeks out is advisable. Same-week bookings are sometimes possible outside peak periods."
+            "text": "We recommend booking at least two weeks ahead. During peak ski season (January to March) and early summer (June to August), popular dates fill quickly and we suggest booking four to six weeks out. Same-week bookings are sometimes possible outside peak periods."
           }
         },
         {
@@ -171,15 +282,7 @@
           "name": "Is there Japanese language support?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. The Niseko Memories team communicates in both English and Japanese. Enquiries can be sent in either language via email, WhatsApp, or the booking form."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What should we wear and how does payment work?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "For outdoor sessions, layered and weather-appropriate clothing works best. Avoid large logos. Neutral and muted tones photograph well in Hokkaido's landscapes. A preparation guide with location-specific outfit advice is sent after booking. A 50% deposit confirms the booking, with the remaining balance due on shoot day. Payment by card or bank transfer."
+            "text": "Yes. Our team communicates in both English and Japanese. All enquiries can be sent in either language and we will reply accordingly. This applies to email, WhatsApp, and the booking form."
           }
         }
       ]
@@ -874,13 +977,23 @@ footer {
 @media (max-width: 768px) { .mobile-cta { display: block; } }
 .mobile-cta.hidden { display: none; }
 
+/* LANGUAGE SWITCH */
+.nav-links { align-items: center; }
+.lang-switch a { border: 1px solid rgba(200,191,176,0.45); padding: 0.3rem 0.7rem; letter-spacing: 0.08em; text-transform: none; }
+.lang-switch a:hover { border-color: var(--gold-lt); }
+.nav-mobile { display: none; align-items: center; gap: 0.6rem; }
+.lang-switch-mobile { font-size: 0.8rem; color: var(--stone); border: 1px solid rgba(200,191,176,0.45); min-height: 44px; padding: 0 0.7rem; display: inline-flex; align-items: center; }
+@media (max-width: 900px) { .nav-mobile { display: flex; } }
 
+.pkg-note { color: #6f6458; }
+.pkg-note a { color: #775d2d !important; border-bottom-color: rgba(119,93,45,0.45) !important; }
+.footer-links li { color: #b3a594; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 </style>
 </head>
 
 <body>
 
-<a href="#main" class="skip-link">Skip to content</a>
 
 <!-- NAV -->
 <nav id="main-nav" aria-label="Main navigation">
@@ -892,8 +1005,11 @@ footer {
       <li><a href="#packages">Packages</a></li>
       <li><a href="#why-us">Why Us</a></li>
       <li><a href="#faq">FAQ</a></li>
+      <li class="lang-switch"><a href="/ja/" hreflang="ja" lang="ja">日本語</a></li>
       <li><a href="#contact" class="btn btn-gold" style="padding:0.5rem 1.2rem;">Book Now</a></li>
     </ul>
+    <div class="nav-mobile">
+      <a href="/ja/" class="lang-switch-mobile" hreflang="ja" lang="ja">日本語</a>
     <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-drawer">
       <svg width="22" height="16" viewBox="0 0 22 16" fill="none">
         <rect y="0" width="22" height="1.5" fill="currentColor"/>
@@ -901,6 +1017,7 @@ footer {
         <rect y="14" width="22" height="1.5" fill="currentColor"/>
       </svg>
     </button>
+    </div>
   </div>
 </nav>
 
@@ -919,6 +1036,7 @@ footer {
       <li><a href="#why-us">Why Us</a></li>
       <li><a href="#faq">FAQ</a></li>
       <li><a href="#contact">Book Now</a></li>
+      <li><a href="/ja/" hreflang="ja" lang="ja">日本語</a></li>
     </ul>
   </div>
 </div>
@@ -948,8 +1066,8 @@ footer {
           <div class="stat-label">Gallery Delivery</div>
         </div>
         <div>
-          <div class="stat-num">48 Hr</div>
-          <div class="stat-label">Response Time</div>
+          <div class="stat-num">EN / <span lang="ja">日本語</span></div>
+          <div class="stat-label">Languages</div>
         </div>
       </div>
       <div class="hero-cta">
@@ -994,7 +1112,7 @@ footer {
           <div class="label">Who we are</div>
           <h2 class="section-title" id="intro-heading">Niseko's portrait<br><em>photography team.</em></h2>
           <br>
-          <p>Niseko Memories is a vacation and family photography service in Hokkaido, Japan, operated by Nomado Ltd. We are the sister company of <a href="https://queenstownmemories.co.nz" target="_blank" rel="noopener" style="color:var(--gold);border-bottom:1px solid rgba(184,151,90,0.3);">Queenstown Memories</a> in New Zealand. Nomado Ltd is a Queenstown-founded photography company now operating in Niseko and throughout Japan.</p>
+          <p>Niseko Memories is a vacation and family photography service in Hokkaido, Japan, operated by Nomado Ltd. We are the sister company of <a href="https://queenstownmemories.co.nz" target="_blank" rel="noopener" style="color:var(--gold);border-bottom:1px solid rgba(184,151,90,0.3);">Queenstown Memories<span class="sr-only"> (opens in a new tab)</span></a> in New Zealand. Nomado Ltd is a Queenstown-founded photography company now operating in Niseko and throughout Japan.</p>
           <p>Sessions are available in Niseko, Hirafu, Otaru, and Lake Toya, with packages from ¥50,000. Edited galleries are delivered within 5 working days. We work in English and Japanese, and travel to Otaru and Lake Toya is included in every package price.</p>
           <p>Sessions are led by our local photographer, supported by a small team of contractors. Relaxed, unhurried, and built around you rather than a shot list.</p>
           <a href="#packages" class="btn btn-dark" style="margin-right:1rem;">View Packages</a>
@@ -1012,15 +1130,15 @@ footer {
         <div class="locations-grid">
           <div class="location-item">
             <h3>Niseko &amp; Hirafu</h3>
-            <p>Our home base. Lupin fields in spring, powder snowfields in winter, the Annupuri ridgeline at any time of year. We know exactly where the light falls and when.</p>
+            <p>Our home base. Lupin fields in early summer, powder snowfields in winter, the Annupuri ridgeline at any time of year. We know exactly where the light falls and when.</p>
           </div>
           <div class="location-item">
             <h3>Otaru</h3>
-            <p>The canal district, the glassworks laneway, and the old merchant buildings make Otaru one of Hokkaido's most photogenic towns. A 40-minute drive from Niseko.</p>
+            <p>The canal district, the glassworks laneway, and the old merchant buildings make Otaru one of Hokkaido's most photogenic towns. About 75 to 90 minutes by car from Hirafu.</p>
           </div>
           <div class="location-item">
             <h3>Lake Toya</h3>
-            <p>A caldera lake ringed by mountains. Clear water, open skies, and a stillness that photographs beautifully in every season. About 40 minutes from Niseko.</p>
+            <p>A caldera lake ringed by mountains. Clear water, open skies, and a stillness that photographs beautifully in every season. About an hour by car from Niseko.</p>
           </div>
           <div class="location-item">
             <h3>Hanazono &amp; Beyond</h3>
@@ -1043,7 +1161,7 @@ footer {
       <div class="packages-grid">
 
         <!-- Package 1 -->
-        <div class="pkg-card reveal">
+        <div class="pkg-card reveal" id="plan-family">
           <div class="pkg-img-wrap">
             <img class="pkg-img" src="images/niseko-japan-family-couples-photographer-lupins-221.webp"
               alt="Couple in lupin fields Niseko Hokkaido Japan" loading="lazy" width="2048" height="1365">
@@ -1067,7 +1185,7 @@ footer {
         </div>
 
         <!-- Package 2 -->
-        <div class="pkg-card reveal reveal-delay-1">
+        <div class="pkg-card reveal reveal-delay-1" id="plan-group">
           <div class="pkg-img-wrap">
             <img class="pkg-img" src="images/niseko-hirafu-family-photographer-japan.webp"
               alt="Tour group photoshoot Niseko Hirafu Hokkaido" loading="lazy" width="2048" height="1365">
@@ -1091,7 +1209,7 @@ footer {
         </div>
 
         <!-- Package 3 -->
-        <div class="pkg-card reveal reveal-delay-2">
+        <div class="pkg-card reveal reveal-delay-2" id="plan-ski">
           <div class="pkg-img-wrap">
             <img class="pkg-img" src="images/niseko-japan-ski-photographer.webp"
               alt="Niseko ski photography on mountain powder Hokkaido" loading="lazy" width="483" height="724">
@@ -1116,7 +1234,7 @@ footer {
 
       </div>
 
-      <p class="pkg-note">We do not take on wedding photography through this brand. For Niseko weddings and elopements, please visit <a href="https://nomadweddings.jp" target="_blank" rel="noopener">Nomad Weddings Japan</a>.</p>
+      <p class="pkg-note">We do not take on wedding photography through this brand. For Niseko weddings and elopements, please visit <a href="https://nomadweddings.jp" target="_blank" rel="noopener">Nomad Weddings Japan<span class="sr-only"> (opens in a new tab)</span></a>.</p>
 
     </div>
   </section>
@@ -1126,7 +1244,7 @@ footer {
     <div class="parallax-bg" aria-hidden="true" style="background-image: url('images/niseko-lake-toya-family-vacation-photographer-japan-hokkaido-scaled.webp');"></div>
     <div class="parallax-content">
       <h2 id="parallax1-heading">Hokkaido in<br><em>every season.</em></h2>
-      <p>Powder winters · Lupin springs · Lavender summers · Crimson autumns</p>
+      <p>Powder winters · Early summer lupins · Green summers · Crimson autumns</p>
       <a href="#contact" class="btn btn-gold">Check Availability</a>
     </div>
   </section>
@@ -1232,7 +1350,7 @@ footer {
 
         <div class="faq-item reveal">
           <h3>Do you photograph in summer and autumn?</h3>
-          <p>Yes. Hokkaido photographs well in every season. Lupins bloom in late May and June, lavender in July and August, foliage turns crimson in October. We can advise on the precise timing for each season to help you plan around your travel dates.</p>
+          <p>Yes. Niseko Memories photographs year-round. Lupins usually bloom around June (timing varies by year), July and August bring deep green summer, and autumn colour on Niseko Annupuri usually peaks in early to mid October. We can advise on the best timing for your travel dates.</p>
         </div>
 
         <div class="faq-item reveal reveal-delay-1">
@@ -1242,7 +1360,7 @@ footer {
 
         <div class="faq-item reveal">
           <h3>How far in advance should we book?</h3>
-          <p>We recommend booking at least two weeks ahead. During peak ski season (January to March) and the lupin and lavender season (June to August), popular dates fill quickly and we suggest booking four to six weeks out. Same-week bookings are sometimes possible outside peak periods.</p>
+          <p>We recommend booking at least two weeks ahead. During peak ski season (January to March) and early summer (June to August), popular dates fill quickly and we suggest booking four to six weeks out. Same-week bookings are sometimes possible outside peak periods.</p>
         </div>
 
         <div class="faq-item reveal reveal-delay-1">
@@ -1267,7 +1385,7 @@ footer {
             <p class="contact-payment">A 50% deposit confirms your booking. Remaining balance due on shoot day. Payment by card or bank transfer.</p>
           </div>
           <div class="contact-links">
-            <a href="https://wa.me/819033997122" target="_blank" rel="noopener">WhatsApp: +81 90 3399 7122</a>
+            <a href="https://wa.me/819033997122" target="_blank" rel="noopener">WhatsApp: +81 90 3399 7122<span class="sr-only"> (opens in a new tab)</span></a>
             <a href="mailto:hello@nisekomemories.jp">hello@nisekomemories.jp</a>
           </div>
           <img class="contact-img"
@@ -1286,7 +1404,7 @@ footer {
               allowfullscreen>
             </iframe>
           </div>
-          <p class="contact-fallback">Form not loading? Reach us via <a href="https://wa.me/819033997122" target="_blank" rel="noopener">WhatsApp</a> or <a href="mailto:hello@nisekomemories.jp">hello@nisekomemories.jp</a></p>
+          <p class="contact-fallback">Form not loading? Reach us via <a href="https://wa.me/819033997122" target="_blank" rel="noopener">WhatsApp<span class="sr-only"> (opens in a new tab)</span></a> or <a href="mailto:hello@nisekomemories.jp">hello@nisekomemories.jp</a></p>
           <script type="text/javascript" data-iframe-id="sn-form-2ie7c" src="https://app.studioninja.co/client-assets/form-render/assets/scripts/iframeResizer.js"></script>
         </div>
 
@@ -1307,19 +1425,20 @@ footer {
       <div>
         <p class="footer-heading">Related Services</p>
         <ul class="footer-links">
-          <li><a href="https://queenstownmemories.co.nz" target="_blank" rel="noopener">Queenstown Memories (sister brand)</a></li>
-          <li><a href="https://nomadweddings.jp" target="_blank" rel="noopener">Nomad Weddings Japan</a></li>
-          <li><a href="https://nomad.wedding" target="_blank" rel="noopener">Nomad Weddings NZ</a></li>
-          <li><a href="http://www.propertymedia.jp" target="_blank" rel="noopener">Niseko Real Estate Photography</a></li>
+          <li><a href="https://queenstownmemories.co.nz" target="_blank" rel="noopener">Queenstown Memories (sister brand)<span class="sr-only"> (opens in a new tab)</span></a></li>
+          <li><a href="https://nomadweddings.jp" target="_blank" rel="noopener">Nomad Weddings Japan<span class="sr-only"> (opens in a new tab)</span></a></li>
+          <li><a href="https://nomad.wedding" target="_blank" rel="noopener">Nomad Weddings NZ<span class="sr-only"> (opens in a new tab)</span></a></li>
+          <li><a href="https://www.propertymedia.jp" target="_blank" rel="noopener">Niseko Real Estate Photography<span class="sr-only"> (opens in a new tab)</span></a></li>
         </ul>
       </div>
       <div>
         <p class="footer-heading">Get in Touch</p>
         <ul class="footer-links">
-          <li><a href="https://wa.me/819033997122" target="_blank" rel="noopener">WhatsApp: +81 90 3399 7122</a></li>
+          <li><a href="https://wa.me/819033997122" target="_blank" rel="noopener">WhatsApp: +81 90 3399 7122<span class="sr-only"> (opens in a new tab)</span></a></li>
           <li><a href="mailto:hello@nisekomemories.jp">hello@nisekomemories.jp</a></li>
           <li><a href="#contact">Contact Form</a></li>
           <li>Location: Niseko, Hokkaido, Japan</li>
+          <li><a href="/ja/" hreflang="ja" lang="ja">日本語サイト</a></li>
         </ul>
       </div>
     </div>
