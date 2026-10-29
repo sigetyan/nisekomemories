@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ニセコ 家族写真・カップルフォト｜北海道の出張撮影 Niseko Memories</title>
+<title>ニセコの家族写真・カップルフォト｜北海道の出張撮影 Niseko Memories</title>
 <meta name="description" content="ニセコ・小樽・洞爺湖で家族写真、カップルフォト、スキー撮影。1時間42,500円（税込）から。北海道在住のカメラマンが撮影し、写真は5営業日以内にオンラインでお届けします。小樽・洞爺湖への出張費込み。">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="https://www.nisekomemories.jp/ja/">
@@ -289,7 +289,7 @@
           "name": "夏や秋も撮影できますか？",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "はい、一年を通して撮影しています。ニセコでは例年6月ごろにルピナスが咲き（年により前後します）、7〜8月は緑の濃い夏、ニセコアンヌプリの紅葉は例年10月上旬から中旬に見ごろを迎えます。ご旅行の日程に合わせて、季節ごとのおすすめの時期や場所をご案内します。"
+            "text": "はい、一年を通して撮影しています。ニセコでは例年6月ごろにルピナスが咲き（年により前後します）、7〜8月は緑の濃い夏、ニセコアンヌプリの紅葉は例年10月上旬から中旬に見頃を迎えます。ご旅行の日程に合わせて、季節ごとのおすすめの時期や場所をご案内します。"
           }
         },
         {
@@ -297,7 +297,7 @@
           "name": "北海道のどのエリアで撮影できますか？",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "ニセコ・ひらふ・花園を中心に、小樽や洞爺湖でも撮影しています。小樽・洞爺湖への出張費は料金に含まれます。北海道での結婚式やフォトウェディングをご希望の方は、Nomad Weddings Japan（新しいタブで開きます）をご覧ください。"
+            "text": "ニセコ・ひらふ・花園を中心に、小樽や洞爺湖でも撮影しています。小樽・洞爺湖への出張費は料金に含まれます。北海道での結婚式やフォトウェディングをご希望の方は、Nomad Weddings Japan（nomadweddings.jp）をご覧ください。"
           }
         },
         {
@@ -313,7 +313,7 @@
           "name": "どのように問い合わせればよいですか？",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "お問い合わせフォーム、メール、お電話、WhatsAppのいずれからでもお気軽にご連絡ください。スタッフは日本語と英語の両方に対応していますので、海外のご家族やご友人とご一緒の撮影もご相談いただけます。"
+            "text": "お問い合わせフォーム、メール（hello@nisekomemories.jp）、お電話・WhatsApp（090-3399-7122）のいずれからでもお気軽にご連絡ください。スタッフは日本語と英語の両方に対応していますので、海外のご家族やご友人とご一緒の撮影もご相談いただけます。"
           }
         },
         {
@@ -1038,6 +1038,7 @@ footer {
 .lang-switch-mobile { font-size: 0.8rem; color: var(--stone); border: 1px solid rgba(200,191,176,0.45); min-height: 44px; padding: 0 0.7rem; display: inline-flex; align-items: center; }
 @media (max-width: 900px) { .nav-mobile { display: flex; } }
 
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 
 /* ===== JAPANESE OVERRIDES ===== */
 :root {
@@ -1208,6 +1209,19 @@ body:has(#mobile-drawer.open) .mobile-cta { display: none; }
 .footer-links a { padding: 0.65rem 0; }
 .sources-updated { font-size: 0.8rem; color: #6f6458; margin-bottom: 1rem; }
 
+/* round 4 UI */
+@media (min-width: 861px) { .location-item + .location-item { padding-left: 2rem; } }
+@media (min-width: 541px) and (max-width: 860px) { .location-item:nth-child(2), .location-item:nth-child(4) { padding-left: 2rem; } }
+.hero-sub, .parallax-content p, .footer-desc, .packages-header p, .contact-text p { word-break: auto-phrase; }
+.footer-desc { max-width: 22em; text-wrap: pretty; }
+@media (min-width: 769px) { .why-item { display: flex; flex-direction: column; } .why-img { margin-top: auto; } .why-item p { margin-bottom: 2rem; } }
+.pkg-includes li::before { margin-top: 11px; height: 1px; transform: translateZ(0); }
+@media (max-width: 480px) { .hero-trust { display: none; } }
+.footer-heading-2 { margin-top: 1.8rem; }
+.faq-item:last-child:nth-child(odd) { grid-column: 1 / -1; }
+.ticker { font-size: 0.8rem; color: #d9cfc1; }
+.parallax-content .parallax-title { line-height: 1.5; margin-bottom: 1.2rem; }
+
 </style>
 </head>
 
@@ -1227,10 +1241,10 @@ body:has(#mobile-drawer.open) .mobile-cta { display: none; }
       <li><a href="#process">ご予約の流れ</a></li>
       <li><a href="#faq">よくある質問</a></li>
       <li class="lang-switch"><a href="/" hreflang="en" lang="en">English</a></li>
-      <li><a href="#contact" class="btn btn-gold nav-book">予約・お問い合わせ</a></li>
+      <li><a href="#contact" class="btn btn-gold nav-book">お問い合わせ</a></li>
     </ul>
     <div class="nav-mobile">
-      <a href="/" class="lang-switch-mobile" hreflang="en" lang="en">EN</a>
+      <a href="/" class="lang-switch-mobile" hreflang="en" lang="en" aria-label="English">EN</a>
       <button class="hamburger" id="hamburger" aria-label="メニューを開く" aria-expanded="false" aria-controls="mobile-drawer">
         <svg width="22" height="16" viewBox="0 0 22 16" fill="none" aria-hidden="true">
           <rect y="0" width="22" height="1.5" fill="currentColor"/>
@@ -1276,9 +1290,9 @@ body:has(#mobile-drawer.open) .mobile-cta { display: none; }
         <span>北海道・ニセコ</span>
       </div>
       <h1 class="hero-headline" id="hero-headline">
-        ニセコの家族写真・<br><em>カップルフォト撮影</em>
+        ニセコの家族写真と<br><em>カップルフォト撮影</em>
       </h1>
-      <p class="hero-sub">北海道で過ごす時間を、いつまでも残る写真に。ニセコ・小樽・洞爺湖で、ご家族やカップルの自然な表情を撮影する出張撮影サービスです。</p>
+      <p class="hero-sub">北海道で過ごす時間を、いつまでも残る写真に。ニセコ・小樽・洞爺湖で、<span class="nw">ご家族やカップル</span>の自然な表情を撮影する出張撮影サービスです。</p>
       <dl class="hero-stats">
         <div>
           <dt class="stat-label">撮影実績</dt>
@@ -1304,19 +1318,19 @@ body:has(#mobile-drawer.open) .mobile-cta { display: none; }
   <!-- TICKER -->
   <div class="ticker" aria-hidden="true">
     <div class="ticker-track">
-      <span>ニセコ 家族写真</span>
-      <span>北海道 旅行フォト</span>
-      <span>ニセコ スキー撮影</span>
-      <span>小樽 カップルフォト</span>
-      <span>洞爺湖 家族撮影</span>
+      <span>ニセコの家族写真</span>
+      <span>北海道の旅行フォト</span>
+      <span>ニセコのスキー撮影</span>
+      <span>小樽のカップルフォト</span>
+      <span>洞爺湖の家族撮影</span>
       <span>42,500円（税込）から</span>
       <span>5営業日以内に納品</span>
       <span>北海道在住のカメラマン</span>
-      <span>ニセコ 家族写真</span>
-      <span>北海道 旅行フォト</span>
-      <span>ニセコ スキー撮影</span>
-      <span>小樽 カップルフォト</span>
-      <span>洞爺湖 家族撮影</span>
+      <span>ニセコの家族写真</span>
+      <span>北海道の旅行フォト</span>
+      <span>ニセコのスキー撮影</span>
+      <span>小樽のカップルフォト</span>
+      <span>洞爺湖の家族撮影</span>
       <span>42,500円（税込）から</span>
       <span>5営業日以内に納品</span>
       <span>北海道在住のカメラマン</span>
@@ -1333,7 +1347,7 @@ body:has(#mobile-drawer.open) .mobile-cta { display: none; }
         </div>
         <div class="intro-body reveal reveal-delay-1">
           <p class="label">Niseko Memoriesについて</p>
-          <h2 class="section-title" id="intro-heading">ニセコを拠点にした<br><em>出張撮影サービス</em></h2>
+          <h2 class="section-title" id="intro-heading">ニセコを拠点にした<br><em>出張カメラマンの撮影サービス</em></h2>
           <p>Niseko Memories（ニセコメモリーズ）は、北海道ニセコを拠点とする旅行写真・家族写真の出張撮影サービスです。ニュージーランドの<a class="inline-link" href="https://queenstownmemories.co.nz" target="_blank" rel="noopener">Queenstown Memories<span class="sr-only">（新しいタブで開きます）</span></a>の姉妹ブランドとして、ニセコを中心に北海道で撮影を行っています。</p>
           <p>撮影エリアはニセコ、ひらふ、小樽、洞爺湖。<a class="inline-link" href="#packages">料金</a>は42,500円（税込）から。小樽・洞爺湖への出張費も含まれ、編集した写真は5営業日以内にお届けします。</p>
           <p>撮影を担当するのは北海道在住のカメラマン。地元の少人数のスタッフがサポートします。決まったカットを順番にこなすのではなく、ご家族やおふたりのペースに合わせて、ゆったりと撮影を進めます。</p>
@@ -1342,7 +1356,7 @@ body:has(#mobile-drawer.open) .mobile-cta { display: none; }
             <div><dt>撮影時間</dt><dd>1時間または2時間</dd></div>
             <div><dt>写真の枚数</dt><dd>編集済み50〜160枚（プランにより異なります）</dd></div>
             <div><dt>納品</dt><dd>5営業日以内にオンラインギャラリーで納品</dd></div>
-            <div><dt>撮影エリア</dt><dd>ニセコ町、倶知安町（ひらふ・花園）、小樽市、洞爺湖</dd></div>
+            <div><dt>撮影エリア</dt><dd>ニセコ町、倶知安町（ひらふ・花園）、蘭越町（昆布温泉）、小樽市、洞爺湖周辺</dd></div>
             <div><dt>予約金</dt><dd>ご予約時に料金の50%</dd></div>
             <div><dt>対応言語</dt><dd>日本語・英語</dd></div>
           </dl>
@@ -1365,15 +1379,15 @@ body:has(#mobile-drawer.open) .mobile-cta { display: none; }
           </div>
           <div class="location-item">
             <h3>小樽</h3>
-            <p>運河沿いの石造り倉庫<a class="cite" href="#src-otaru-canal" aria-label="出典：小樽運河">［出典］</a>、ガラス工房が並ぶ通り<a class="cite" href="#src-otaru-glass" aria-label="出典：旧木村倉庫と北一硝子">［出典］</a>、明治末期から大正期の繁栄を伝える銀行や商社の建物<a class="cite" href="#src-otaru" aria-label="出典：小樽市 小樽の歴史的建造物">［出典］</a>。北海道でも指折りの、絵になる港町で、カップルフォトや浴衣での街歩き撮影にもよく選ばれます。ニセコから車で約1時間半<a class="cite" href="#src-otaru-drive" aria-label="出典：ニセコから小樽までの所要時間">［出典］</a>。</p>
+            <p>運河沿いの石造り倉庫<a class="cite" href="#src-otaru-canal" aria-label="出典：小樽運河">［出典］</a>、ガラス工房が並ぶ通り<a class="cite" href="#src-otaru-glass" aria-label="出典：旧木村倉庫と北一硝子">［出典］</a>、明治末期から大正期の繁栄を伝える銀行や商社の建物<a class="cite" href="#src-otaru" aria-label="出典：小樽市 小樽の歴史的建造物">［出典］</a>。北海道でも指折りの絵になる港町で、カップルフォトや浴衣での街歩き撮影の場所としても人気です。ニセコから車で約1時間半です<a class="cite" href="#src-otaru-drive" aria-label="出典：ニセコから小樽までの所要時間">［出典］</a>。</p>
           </div>
           <div class="location-item">
             <h3>洞爺湖</h3>
-            <p>約11万年前の噴火で生まれた、山々に囲まれたカルデラ湖<a class="cite" href="#src-toya-caldera" aria-label="出典：洞爺カルデラの成り立ち">［出典］</a>。澄んだ湖面と広い空が広がる静かな景色は、四季を通して写真映えし、ご家族での記念撮影にもおすすめです。一帯は「洞爺湖有珠山ジオパーク」としてユネスコ世界ジオパークに認定されています<a class="cite" href="#src-geopark" aria-label="出典：洞爺湖有珠山ジオパーク">［出典］</a>。ニセコから車で約1時間です<a class="cite" href="#src-toya-drive" aria-label="出典：ニセコから洞爺湖までの所要時間">［出典］</a>。</p>
+            <p>約11万年前の噴火で生まれた、山々に囲まれたカルデラ湖<a class="cite" href="#src-toya-caldera" aria-label="出典：洞爺カルデラの成り立ち">［出典］</a>。澄んだ湖面と大きな空が広がる静かな景色は、四季を通して写真映えし、ご家族での記念撮影にもおすすめです。一帯は「洞爺湖有珠山ジオパーク」としてユネスコ世界ジオパークに認定されています<a class="cite" href="#src-geopark" aria-label="出典：洞爺湖有珠山ジオパーク">［出典］</a>。ニセコから車で約1時間です<a class="cite" href="#src-toya-drive" aria-label="出典：ニセコから洞爺湖までの所要時間">［出典］</a>。</p>
           </div>
           <div class="location-item">
             <h3>花園ほか</h3>
-            <p>花園や昆布温泉のほか、地元ならではの穴場スポットでも撮影できます。ご旅行の日程に合う場所をご提案しますので、お気軽にご相談ください。</p>
+            <p>花園や昆布温泉（蘭越町）のほか、地元ならではの穴場スポットでも撮影できます。ご旅行の日程に合う場所をご提案しますので、お気軽にご相談ください。</p>
           </div>
         </div>
         <p class="locations-note">カメラマンの交通費・出張費は、ニセコエリアはもちろん、小樽・洞爺湖での撮影も料金に含まれています。</p>
@@ -1424,8 +1438,8 @@ body:has(#mobile-drawer.open) .mobile-cta { display: none; }
           <div class="pkg-body">
             <p class="pkg-name">団体様歓迎</p>
             <h3 class="pkg-title" id="pkg2-title">グループ</h3>
-            <p class="pkg-best-for">おすすめ：旅行会社のツアー、修学旅行、社員旅行</p>
-            <p class="pkg-desc">2か所を巡って2時間撮影する、大人数向けのプランです。三世代でのご家族旅行や、ご友人同士のグループにもおすすめです。</p>
+            <p class="pkg-best-for">おすすめ：三世代のご家族旅行、ご友人同士の旅行、社員旅行</p>
+            <p class="pkg-desc">2か所を巡って2時間撮影する、大人数向けのプランです。</p>
             <ul class="pkg-includes">
               <li>撮影時間 2時間</li>
               <li>撮影場所 2か所（ご希望の場所）</li>
@@ -1452,7 +1466,7 @@ body:has(#mobile-drawer.open) .mobile-cta { display: none; }
             <p class="pkg-desc">世界中のスキーヤーが憧れるニセコのパウダースノーで、ゲレンデ撮影を行います。プロのスキーガイドが同行し、撮影に最適なコースへご案内します。</p>
             <ul class="pkg-includes">
               <li>プロのスキーガイドが同行</li>
-              <li>撮影時間 2時間（ゲレンデ）</li>
+              <li>撮影時間 2時間（ゲレンデでの撮影）</li>
               <li>5名様まで</li>
               <li>パウダーの滑走シーンやリフトでの撮影</li>
               <li>編集済み写真 70〜100枚</li>
@@ -1475,7 +1489,7 @@ body:has(#mobile-drawer.open) .mobile-cta { display: none; }
     <div class="parallax-bg" aria-hidden="true" style="background-image: url('/images/niseko-lake-toya-family-vacation-photographer-japan-hokkaido-scaled.webp');"></div>
     <div class="parallax-content">
       <p class="parallax-title">四季それぞれの<br><em>北海道を写真に。</em></p>
-      <p>冬のパウダースノー、初夏のルピナス、夏の緑、秋の紅葉</p>
+      <p><span class="nw">冬のパウダースノー、</span><span class="nw">初夏のルピナス、</span><span class="nw">夏の緑、</span><span class="nw">秋の紅葉</span></p>
       <a href="#contact" class="btn btn-gold">空き状況を確認する</a>
     </div>
   </section>
@@ -1545,7 +1559,7 @@ body:has(#mobile-drawer.open) .mobile-cta { display: none; }
         </li>
       </ol>
       <div class="process-cta reveal">
-        <a href="#contact" class="btn btn-dark">撮影を予約する</a>
+        <a href="#contact" class="btn btn-dark">空き状況を確認する</a>
       </div>
     </div>
   </section>
@@ -1580,7 +1594,7 @@ body:has(#mobile-drawer.open) .mobile-cta { display: none; }
 
         <div class="faq-item reveal">
           <h3>夏や秋も撮影できますか？</h3>
-          <p>はい、一年を通して撮影しています。ニセコでは例年6月ごろにルピナスが咲き（年により前後します）、7〜8月は緑の濃い夏、ニセコアンヌプリの紅葉は例年10月上旬から中旬に見ごろを迎えます<a class="cite" href="#src-koyo" aria-label="出典：ニセコアンヌプリの紅葉の見頃">［出典］</a>。ご旅行の日程に合わせて、季節ごとのおすすめの時期や場所をご案内します。</p>
+          <p>はい、一年を通して撮影しています。ニセコでは例年6月ごろにルピナスが咲き（年により前後します）、7〜8月は緑の濃い夏、ニセコアンヌプリの紅葉は例年10月上旬から中旬に見頃を迎えます<a class="cite" href="#src-koyo" aria-label="出典：ニセコアンヌプリの紅葉の見頃">［出典］</a>。ご旅行の日程に合わせて、季節ごとのおすすめの時期や場所をご案内します。</p>
         </div>
 
         <div class="faq-item reveal reveal-delay-1">
@@ -1595,7 +1609,7 @@ body:has(#mobile-drawer.open) .mobile-cta { display: none; }
 
         <div class="faq-item reveal reveal-delay-1">
           <h3>どのように問い合わせればよいですか？</h3>
-          <p>お問い合わせフォーム、メール、お電話、WhatsAppのいずれからでもお気軽にご連絡ください。スタッフは日本語と英語の両方に対応していますので、海外のご家族やご友人とご一緒の撮影もご相談いただけます。</p>
+          <p>お問い合わせフォーム、メール（hello@nisekomemories.jp）、お電話・WhatsApp（090-3399-7122）のいずれからでもお気軽にご連絡ください。スタッフは日本語と英語の両方に対応していますので、海外のご家族やご友人とご一緒の撮影もご相談いただけます。</p>
         </div>
 
         <div class="faq-item reveal">
@@ -1700,11 +1714,16 @@ body:has(#mobile-drawer.open) .mobile-cta { display: none; }
         <ul class="footer-links">
           <li><a href="https://wa.me/819033997122" target="_blank" rel="noopener">WhatsApp：+81 90 3399 7122<span class="sr-only">（新しいタブで開きます）</span></a></li>
           <li><a href="mailto:hello@nisekomemories.jp">hello@nisekomemories.jp</a></li>
+          <li><a href="tel:+819033997122">電話：090-3399-7122</a></li>
+          <li><a href="#contact">お問い合わせフォーム</a></li>
+          <li>所在地：北海道ニセコ町</li>
+        </ul>
+        <p class="footer-heading footer-heading-2">ページ内リンク</p>
+        <ul class="footer-links">
           <li><a href="#packages">料金プラン</a></li>
           <li><a href="#locations">撮影エリア</a></li>
           <li><a href="#faq">よくある質問</a></li>
-          <li><a href="#contact">お問い合わせフォーム</a></li>
-          <li>所在地：北海道ニセコ町</li>
+          <li><a href="#sources">出典・参考情報</a></li>
           <li><a href="/" hreflang="en" lang="en">English site</a></li>
         </ul>
       </div>
@@ -1715,7 +1734,7 @@ body:has(#mobile-drawer.open) .mobile-cta { display: none; }
 
 <!-- MOBILE STICKY CTA -->
 <div class="mobile-cta" id="mobile-cta">
-  <a href="#contact">撮影を予約する</a>
+  <a href="#contact">空き状況を確認する</a>
 </div>
 
 <script>
